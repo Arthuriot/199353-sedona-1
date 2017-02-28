@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Arthur Kuznetsov](https://up.htmlacademy.ru/adaptive/10/user/199353).
-* Наставник: `Неизвестно`.
+* Наставник: [Nikita Rogatnev](https://htmlacademy.ru/profile/id86119).
 
 ---
 
