@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона - Форма</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+
+      <div class="logo">
+        <a class="logo__link">
+          <img src="#" width="" height="" alt="Логотип">
+        </a>
+      </div>
+
+      <nav class="menu menu--closed">
+        <button class="menu__toggle" type="button">Открыть меню</button>
+        <div class="menu__container">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="index.html">Главная</a></li>
+            <li class="menu__item"><a href="photos.html">Фото и видео</a></li>
+            <li class="menu__item"><a>Форма отзыва</a></li>
+            <li class="menu__item"><a href="#">HTML academy</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+  <main>
+    <div class="promo promo--form">
+      <div class="promo__container">
+
+        <img src="#" width="" height="" alt="">
+        <div class="promo__bottom">
+          <img src="#" width="" height="" alt="">
+        </div>
+
+      </div>
+    </div>
+
+    <section class="intro intro--form">
+      <div class="intro__container">
+        <h1 class="intro__title">Оставьте свой отзыв</h1>
+        <p class="intro__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях.</p>
+      </div>
+    </section>
+
+    <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+
+      <section class="form__item">
+        <div class="form__container">
+          <h2 class="form__item-title">Представьтесь:</h2>
+          <div class="form__item-values">
+            <label for="name">Имя*:</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Петр" required>
+            <label for="last-name">Фамилия*:</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Иванов" required>
+            <label for="middle-name">Отчество:</label>
+            <input type="text" name="middle-name" id="middle-name" placeholder="Александрович" required>
+          </div>
+        </div>
+      </section>
+
+      <section class="form__item">
+        <div class="form__container">
+          <h2 class="form__item-title">Контактная информация:</h2>
+          <div class="form__item-values">
+            <label for="phone">Контактный телефон*:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+            <label for="e-mail">Электронная почта*:</label>
+            <input type="email" name="email" id="e-mail" placeholder="Введите e-mail" required>
+          </div>
+        </div>
+      </section>
+
+      <section class="form__item">
+        <div class="form__container">
+          <h2 class="form__item-title">Ваше общее впечатление:</h2>
+          <div class="form__item-values">
+            <input type="radio" name="radio" id="positive">
+            <label for="positive">Скорее положительное</label>
+            <input type="radio" name="radio" id="negative">
+            <label for="negative">Скорее отрицательное</label>
+            <input type="radio" name="radio" id="undefined">
+            <label for="undefined">Затрудняюсь ответить</label>
+          </div>
+        </div>
+      </section>
+
+      <section class="form__item">
+        <div class="form__container">
+          <h2 class="form__item-title">Посещенные достопримечательности:</h2>
+          <div class="form__item-values">
+            <input type="checkbox" name="checkbox" id="bridge">
+            <label for="bridge">Мост Дьявола</label>
+            <input type="checkbox" name="checkbox" id="park">
+            <label for="park">Слайд-парк</label>
+            <input type="checkbox" name="checkbox" id="mountain">
+            <label for="mountain">Гора-Колокол</label>
+            <input type="checkbox" name="checkbox" id="rock">
+            <label for="rock">Красные скалы</label>
+          </div>
+        </div>
+      </section>
+
+      <section class="form__item">
+        <div class="form__container">
+          <h2 class="form__item-title">Опишите свои эмоции:</h2>
+          <textarea name="review" id="review" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+        </div>
+      </section>
+
+      <button class="btn btn--form" type="submit">Отправить отзыв</button>
+
+    </form>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+
+      <div class="footer__hashtag">
+        <span><a href="#">#VISITSEDONA</a></span>
+      </div>
+
+      <div class="social">
+        <a href="#" class="social__link social__link--twitter">Twitter</a>
+        <a href="#" class="social__link social__link--facebook">Facebook</a>
+        <a href="#" class="social__link social__link--youtube">Youtube</a>
+      </div>
+
+      <div class="footer__copyright">
+        <span>Разработано</span>
+        <a href="#" class="html-academy-icon">HTML academy</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="overlay overlay--alert">
+    <div class="modal">
+        <div class="modal__container">
+          <h1>Что-то пошло не так!</h1>
+          <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
+          <button type="button">ОК</button>
+        </div>
+    </div>
+  </div>
+
+  <div class="overlay overlay--success">
+    <div class="modal">
+        <div class="modal__container">
+          <h1>Ваш отзыв отправлен!</h1>
+          <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+          <button type="button">Закрыть окно</button>
+        </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
