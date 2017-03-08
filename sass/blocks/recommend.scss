@@ -1,0 +1,11 @@
+.recommend__container {
+  @include container-style;
+}
+
+.recommend__title {
+  @include main-title;
+}
+
+.recommend__text {
+  @include sub-text;
+}

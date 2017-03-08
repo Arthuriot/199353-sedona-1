@@ -1,0 +1,18 @@
+.photos__container {
+  @include container-style;
+}
+
+.photos__title {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photos__item span {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.photos__author {
+  color: $sub-text-color;
+}

@@ -1,0 +1,92 @@
+// Адаптивность
+@mixin mobile {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+// Ретинизация
+@mixin retina {
+  @media
+    only screen and (min-resolution: 144dpi),
+    only screen and (min-resolution: 1.5dppx) {
+    @content;
+  }
+}
+
+// Стили контейнера
+@mixin container-style {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    padding: 0 50px;
+  }
+}
+
+// Стили шрифта
+@mixin font-family {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+// Стили заголовков
+@mixin main-title {
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+// Стили подтекста
+@mixin sub-text {
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+// Стили текста кнопки
+@mixin btn-text {
+  font-size: 21px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}

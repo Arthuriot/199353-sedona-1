@@ -1,0 +1,11 @@
+.intro__container {
+  @include container-style;
+}
+
+.intro__title {
+  @include main-title;
+}
+
+.intro__text {
+  @include sub-text;
+}

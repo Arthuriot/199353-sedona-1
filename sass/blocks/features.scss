@@ -1,0 +1,36 @@
+.features {
+  &--blue {
+    background-color: $main-bg-color;
+    color: $secondary-text-color;
+  }
+
+  &--gray {
+    background-color: $secondary-bg-color;
+  }
+}
+
+.features__container {
+  @include container-style;
+}
+
+.features__item span {
+  @include sub-text;
+}
+
+.features__title {
+  @include main-title;
+}
+
+.features__text {
+  @include sub-text;
+}
+
+.features__image {
+  &--town img {
+    background-color: $features-image-town-bg-color;
+  }
+
+  &--bridge img {
+    background-color: $features-image-bridge-bg-color;
+  }
+}

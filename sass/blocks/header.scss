@@ -1,0 +1,7 @@
+.header__container {
+  @include container-style;
+}
+
+.header {
+  background-color: $main-bg-color;
+}
