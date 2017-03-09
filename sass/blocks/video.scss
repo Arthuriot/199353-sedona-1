@@ -1,0 +1,11 @@
+.video__container {
+  @include container-style;
+}
+
+.video__title {
+  @include main-title;
+}
+
+.video__text {
+  @include sub-text;
+}

@@ -1,0 +1,12 @@
+.search__container {
+  @include container-style;
+}
+
+.search__title {
+  @include btn-text;
+}
+
+.search__text {
+  @include sub-text;
+  color: $sub-text-color;
+}
