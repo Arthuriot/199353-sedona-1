@@ -1,4 +1,12 @@
 .features {
+  @include tablet {
+    display: flex;
+  }
+
+  @include desktop {
+    display: flex;
+  }
+
   &--blue {
     background-color: $main-bg-color;
     color: $secondary-text-color;
@@ -7,18 +15,60 @@
   &--gray {
     background-color: $secondary-bg-color;
   }
+
+  &--gray .features__container {
+    @include tablet {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
 }
 
 .features__container {
+  text-align: center;
   @include container-style;
-}
+  padding-top: 30px;
+  padding-bottom: 30px;
 
-.features__item span {
-  @include sub-text;
+  @include tablet {
+    display: flex;
+    width: 256px;
+    padding: 35px;
+  }
+
+  @include desktop {
+    display: flex;
+    width: 400px;
+    padding: 50px;
+  }
+
+  &--bridge {
+    @include tablet {
+      order: 2;
+    }
+
+    @include desktop {
+      order: 2;
+    }
+  }
 }
 
 .features__title {
   @include main-title;
+}
+
+.features__item {
+  @include tablet {
+
+  }
+
+  @include desktop {
+
+  }
+}
+
+.features__item span {
+  @include sub-text;
 }
 
 .features__text {
@@ -26,11 +76,33 @@
 }
 
 .features__image {
-  &--town img {
-    background-color: $features-image-town-bg-color;
+  min-height: 260px;
+  @include tablet {
+    width: 512px;
   }
 
-  &--bridge img {
+  @include desktop {
+    min-height: 256px;
+    width: 800px;
+  }
+
+  &--town {
+    background: url("../img/photo-city@1x.jpg") no-repeat center;
+    background-color: $features-image-town-bg-color;
+    background-size: 100% 260px;
+  }
+
+  &--bridge {
+    background: url("../img/photo-bridge@1x.jpg") no-repeat 0 0;
     background-color: $features-image-bridge-bg-color;
+    background-size: 100% 260px;
+
+    @include tablet {
+      order: 1;
+    }
+
+    @include desktop {
+      order: 1;
+    }
   }
 }

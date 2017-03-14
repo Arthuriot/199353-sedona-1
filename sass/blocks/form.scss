@@ -1,3 +1,186 @@
-.form__container {
+.form {
   @include container-style;
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+
+  &--contacts {
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+
+  &--sightseeing {
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &--sightseeing .form__item-values {
+    @include tablet {
+      width: 50%;
+    }
+  }
+}
+
+.form__container label {
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.form__item-title {
+  @include main-title;
+  text-align: center;
+
+  @include tablet {
+    padding-bottom: 30px;
+  }
+
+  @include desktop {
+    padding-bottom: 50px;
+  }
+}
+
+.form__item {
+  padding-top: 20px;
+  width: 100%;
+
+  @include tablet {
+    &--initials {
+      order: 2;
+      width: 50%;
+    }
+
+    &--contacts {
+      order: 3;
+    }
+
+    &--experience {
+      order: 1;
+      width: 50%;
+    }
+
+    &--sightseeing {
+      order: 4;
+    }
+
+    &--emotions {
+      order: 5;
+    }
+  }
+
+  @include desktop {
+    &--initials {
+      order: 2;
+      width: 50%;
+    }
+
+    &--contacts {
+      order: 3;
+    }
+
+    &--experience {
+      order: 1;
+      width: 50%;
+    }
+
+    &--sightseeing {
+      order: 4;
+    }
+
+    &--emotions {
+      order: 5;
+    }
+  }
+}
+
+.form__item textarea {
+  width: 100%;
+  background-color: $input-icon-bg-color;
+  border: none;
+  margin-bottom: 51px;
+
+  @include tablet {
+    margin-bottom: 60px;
+  }
+}
+
+.form__item-values {
+  display: flex;
+
+  &--phone {
+    flex-direction: column;
+    @include desktop {
+      flex-direction: row;
+      flex: 1;
+    }
+  }
+
+  &--email {
+    flex-direction: column;
+    @include desktop {
+      flex-direction: row;
+      flex: 1;
+      margin-left: 80px;
+    }
+  }
+
+  &--bridge {
+    @include desktop {
+      order: 1;
+    }
+  }
+
+  &--park {
+    @include desktop {
+      order: 3;
+    }
+  }
+
+  &--mountain {
+    @include desktop {
+      order: 2;
+    }
+  }
+
+  &--rock {
+    @include desktop {
+      order: 4;
+    }
+  }
+}
+
+.form__item-values input[type="text"],
+.form__item-values input[type="tel"],
+.form__item-values input[type="email"] {
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: $input-bg-color;
+}
+
+.form__sub-text {
+  display: none;
+
+  @include tablet {
+    @include sub-text;
+    align-self: center;
+    order: 7;
+    display: block;
+    width: 324px;
+    text-align: right;
+  }
 }

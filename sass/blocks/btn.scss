@@ -1,3 +1,52 @@
 .btn {
   @include btn-text;
+  width: 100%;
+  color: $secondary-text-color;
+  background-color: $main-bg-color;
+  font-weight: bold;
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-align: center;
+
+  &--search {
+    @include tablet {
+      width: 458px;
+      margin: 0 auto;
+    }
+
+    @include desktop {
+      width: 458px;
+      margin: 0 auto;
+    }
+  }
+
+  &--form {
+    @include tablet {
+      order: 6;
+      width: 324px;
+    }
+
+    @include desktop {
+      order: 6;
+    }
+  }
+
+  &--alert {
+    width: 180px;
+    margin: 0 auto;
+
+    @include tablet {
+      width: 272px;
+    }
+  }
+}
+
+.btn__container {
+  padding: 20px;
+  background-color: $input-bg-color;
+
+  @include tablet {
+    padding: 44px 91px;
+  }
 }

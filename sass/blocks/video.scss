@@ -1,5 +1,6 @@
 .video__container {
   @include container-style;
+  text-align: center;
 }
 
 .video__title {
@@ -8,4 +9,17 @@
 
 .video__text {
   @include sub-text;
+}
+
+.video__description {
+  @include desktop {
+    padding: 65px 345px;
+  }
+}
+
+.video__player {
+  @include desktop {
+    width: 800px;
+    margin: 0 auto;
+  }
 }
