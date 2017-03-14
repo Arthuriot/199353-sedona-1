@@ -3,11 +3,8 @@
   font-family: inherit;
 }
 
-html {
-  min-width: 320px;
-}
-
 body {
+  width: 100%;
   text-transform: uppercase;
   @include font-family;
 }
