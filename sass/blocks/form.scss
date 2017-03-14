@@ -10,6 +10,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-right: 120px;
+    padding-left: 120px;
   }
 }
 
@@ -27,17 +29,34 @@
     @include tablet {
       flex-direction: row;
       flex-wrap: wrap;
+      margin-left: 95px;
     }
 
     @include desktop {
       flex-direction: row;
       justify-content: space-between;
     }
-  }
 
-  &--sightseeing .form__item-values {
-    @include tablet {
-      width: 50%;
+    label {
+      @include tablet {
+        width: 50%;
+      }
+    }
+
+    label:nth-of-type(1) {
+      order: 1;
+    }
+
+    label:nth-of-type(2) {
+      order: 3;
+    }
+
+    label:nth-of-type(3) {
+      order: 2;
+    }
+
+    label:nth-of-type(4) {
+      order: 4;
     }
 
     label:before {
@@ -235,6 +254,15 @@
     order: 7;
     display: block;
     width: 324px;
+    text-align: right;
+  }
+
+  @include desktop {
+    @include sub-text;
+    align-self: center;
+    order: 7;
+    display: block;
+    width: 480px;
     text-align: right;
   }
 }
