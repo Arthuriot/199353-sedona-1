@@ -3,17 +3,20 @@
   font-family: inherit;
 }
 
-html {
-  min-width: 320px;
-}
-
 body {
+  width: 100%;
   text-transform: uppercase;
+  @include font-family;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 li {
@@ -28,4 +31,10 @@ img {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  padding: 0;
 }

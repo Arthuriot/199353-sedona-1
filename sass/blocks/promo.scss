@@ -1,5 +1,7 @@
 .promo {
-  &--index {
-    background-color: $promo-index-bg-color;
-  }
+  width: 100%;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+  background-color: $promo-index-bg-color;
+  min-height: 389px;
+  background-position: 50% 50%;
 }

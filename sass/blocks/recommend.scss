@@ -1,5 +1,24 @@
 .recommend__container {
   @include container-style;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include tablet {
+    display: flex;
+    text-align: center;
+    padding: 0;
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+
+  @include desktop {
+    display: flex;
+    text-align: center;
+    padding: 0;
+    padding-top: 150px;
+    padding-bottom: 70px;
+  }
 }
 
 .recommend__title {
@@ -8,4 +27,32 @@
 
 .recommend__text {
   @include sub-text;
+}
+
+.recommend__item {
+  padding-left: 49px;
+
+  @include tablet {
+    width: 256px;
+    padding-left: 0;
+    padding: 0 45px;
+
+    &--house {
+      order: 1;
+    }
+
+    &--souvenirs {
+      order: 3;
+    }
+
+    &--burger {
+      order: 2;
+    }
+  }
+
+  @include desktop {
+    width: 400px;
+    padding-left: 0;
+    padding: 0 60px;
+  }
 }

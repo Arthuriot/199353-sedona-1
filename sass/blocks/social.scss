@@ -1,0 +1,9 @@
+.social {
+  @include tablet {
+    width: 256px;
+  }
+
+  @include desktop {
+    width: 400px;
+  }
+}

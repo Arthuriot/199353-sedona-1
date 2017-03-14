@@ -1,7 +1,11 @@
-.header__container {
-  @include container-style;
-}
-
 .header {
   background-color: $main-bg-color;
+
+  @include tablet {
+    background-color: inherit;
+  }
+
+  @include desktop {
+    background-color: inherit;
+  }
 }

@@ -1,36 +1,41 @@
-$main-bg-color: #81b3d2;
-$secondary-bg-color: #eee;
-$footer-bg-color: #fefefe;
-$promo-index-bg-color: #a79799;
-$features-image-town-bg-color: #cad1c0;
-$features-image-bridge-bg-color: #eec1aa;
+// Фоновые цвета блоков
+  $main-bg-color: #81b3d2;
+  $secondary-bg-color: #eee;
+  $footer-bg-color: #fefefe;
+  $promo-index-bg-color: #a79799;
+  $features-image-town-bg-color: #cad1c0;
+  $features-image-bridge-bg-color: #eec1aa;
 
-$input-bg-color: #f2f2f2;
-$input-bg-color-hover: #e5e5e5;
-$input-icon-bg-color: #e6e6e6;
+// Фоновые цвета элементов формы
+  $input-bg-color: #f2f2f2;
+  $input-bg-color-hover: #e5e5e5;
+  $input-icon-bg-color: #e6e6e6;
 
-$btn-bg-color: #81b3d2;
-$btn-bg-color-hover: #669ec0;
-$btn-bg-color-down: #5496bd;
-$btn-bg-color-disabled: #e5e5e5;
+  $radio-bg-color-down: #d5d5d5;
+  $radio-button-color-down: #a4a4a4;
+  $checkbox-bg-color-down: #d5d5d5;
 
-$radio-bg-color-down: #d5d5d5;
-$radio-button-color-down: #a4a4a4;
-$checkbox-bg-color-down: #d5d5d5;
+// Фоновые цвета кнопок
+  $btn-bg-color: #81b3d2;
+  $btn-bg-color-hover: #669ec0;
+  $btn-bg-color-down: #5496bd;
+  $btn-bg-color-disabled: #e5e5e5;
 
-$menu-item-text-color-hover: #81b3d2;
-$menu-item-active-text-color: #766357;
-$menu-item-active-text-color-hover: #604e43;
+// Цвета текста элементов меню
+  $menu-item-text-color-hover: #81b3d2;
+  $menu-item-active-text-color: #766357;
+  $menu-item-active-text-color-hover: #604e43;
 
-$menu-item-top-border-color: #9ac2db;
-$menu-item-bottom-border-color: #678fa8;
+// Цвета окантовки элеметнов меню
+  $menu-item-top-border-color: #9ac2db;
+  $menu-item-bottom-border-color: #678fa8;
 
-$main-text-color: #000;
-$secondary-text-color: #ffffff;
-$sub-text-color: #333;
+// Цвет текста
+  $main-text-color: #000;
+  $secondary-text-color: #ffffff;
+  $sub-text-color: #333;
 
-$main-font-regular: "PT Sans Regular";
-$main-font-bold: "PT Sans bold";
-
-$tablet-width: 768px;
-$desktop-width: 1150px;
+// Ключевые точки переключения версий сайта
+  $mobile-width: 320px;
+  $tablet-width: 768px;
+  $desktop-width: 1200px;

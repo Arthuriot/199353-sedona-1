@@ -1,3 +1,61 @@
 .menu__container {
-  @include container-style;
+  text-align: center;
+}
+
+.menu__list {
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @include desktop {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.menu__toggle {
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.menu__item {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-weight: bold;
+  @include menu-text;
+
+  border-top: 1px solid $menu-item-top-border-color;
+  border-bottom: 1px solid $menu-item-bottom-border-color;
+
+  @include tablet {
+    width: 116.5px;
+    border: none;
+  }
+
+  @include desktop {
+    width: 252.5px;
+    border: none;
+  }
+
+  &:first-child {
+    border-top: none;
+  }
+}
+
+.menu__item a {
+  color: $secondary-text-color;
+
+  @include tablet {
+    color: $main-text-color;
+  }
+
+  @include desktop {
+    color: $main-text-color;
+  }
 }

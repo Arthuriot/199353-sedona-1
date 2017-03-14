@@ -1,3 +1,268 @@
-.form__container {
+.form {
   @include container-style;
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+
+  &--contacts {
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+
+  &--sightseeing {
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: 95px;
+    }
+
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    label {
+      @include tablet {
+        width: 50%;
+      }
+    }
+
+    label:nth-of-type(1) {
+      order: 1;
+    }
+
+    label:nth-of-type(2) {
+      order: 3;
+    }
+
+    label:nth-of-type(3) {
+      order: 2;
+    }
+
+    label:nth-of-type(4) {
+      order: 4;
+    }
+
+    label:before {
+      content: "";
+      min-width: 56px;
+      height: 56px;
+      background-color: $input-bg-color;
+      display: inline-block;
+      border-radius: 10%;
+      vertical-align: middle;
+    }
+
+    input:checked + label:before {
+      content: "";
+      display: inline-block;
+      background: $input-bg-color url(../img/icon-tick.svg) no-repeat 50% 50%;
+    }
+  }
+
+  &--experience {
+    label {
+      position: relative;
+    }
+    input[type="radio"] + label:before {
+      content: "";
+      min-width: 56px;
+      height: 56px;
+      display: inline-block;
+      background-color: $input-bg-color;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+
+    input[type="radio"]:checked + label:after {
+      content: "";
+      min-width: 22px;
+      height: 22px;
+      display: inline-block;
+      background-color: $main-text-color;
+      border-radius: 50%;
+      vertical-align: middle;
+      position: absolute;
+      top: 17px;
+      left: 17px;
+    }
+  }
+}
+
+.form__container label {
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.form__item-title {
+  @include main-title;
+  text-align: center;
+
+  @include tablet {
+    padding-bottom: 30px;
+  }
+
+  @include desktop {
+    padding-bottom: 50px;
+  }
+}
+
+.form__item {
+  padding-top: 20px;
+  width: 100%;
+
+  @include tablet {
+    &--initials {
+      order: 2;
+      width: 50%;
+    }
+
+    &--contacts {
+      order: 3;
+    }
+
+    &--experience {
+      order: 1;
+      width: 50%;
+    }
+
+    &--sightseeing {
+      order: 4;
+    }
+
+    &--emotions {
+      order: 5;
+    }
+  }
+
+  @include desktop {
+    &--initials {
+      order: 2;
+      width: 50%;
+    }
+
+    &--contacts {
+      order: 3;
+    }
+
+    &--experience {
+      order: 1;
+      width: 50%;
+    }
+
+    &--sightseeing {
+      order: 4;
+    }
+
+    &--emotions {
+      order: 5;
+    }
+  }
+}
+
+.form__item textarea {
+  width: 100%;
+  background-color: $input-icon-bg-color;
+  border: none;
+  margin-bottom: 51px;
+
+  @include tablet {
+    margin-bottom: 60px;
+  }
+}
+
+.form__item-values {
+  display: flex;
+
+  &--phone {
+    flex-direction: column;
+    @include desktop {
+      flex-direction: row;
+      flex: 1;
+    }
+  }
+
+  &--email {
+    flex-direction: column;
+    @include desktop {
+      flex-direction: row;
+      flex: 1;
+      margin-left: 80px;
+    }
+  }
+
+  &--bridge {
+    @include desktop {
+      order: 1;
+    }
+  }
+
+  &--park {
+    @include desktop {
+      order: 3;
+    }
+  }
+
+  &--mountain {
+    @include desktop {
+      order: 2;
+    }
+  }
+
+  &--rock {
+    @include desktop {
+      order: 4;
+    }
+  }
+}
+
+.form__item-values input[type="text"],
+.form__item-values input[type="tel"],
+.form__item-values input[type="email"] {
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: $input-bg-color;
+}
+
+.form__item input[type="checkbox"],
+.form__item input[type="radio"] {
+  display: none;
+}
+
+.form__sub-text {
+  display: none;
+
+  @include tablet {
+    @include sub-text;
+    align-self: center;
+    order: 7;
+    display: block;
+    width: 324px;
+    text-align: right;
+  }
+
+  @include desktop {
+    @include sub-text;
+    align-self: center;
+    order: 7;
+    display: block;
+    width: 480px;
+    text-align: right;
+  }
 }

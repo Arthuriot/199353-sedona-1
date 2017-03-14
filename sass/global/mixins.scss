@@ -31,16 +31,16 @@
   width: 320px;
   margin: 0 auto;
   position: relative;
-  padding: 0 30px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding: 0 50px;
+    padding: 0 60px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1150px;
-    padding: 0 50px;
+    width: 1200px;
+    padding: 0 60px;
   }
 }
 
@@ -55,11 +55,39 @@
   line-height: 26px;
 
   @media (min-width: $tablet-width) {
-
+    font-size: 21px;
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 21px;
+  }
+}
 
+@mixin modal-title {
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@mixin search-title {
+  font-size: 21px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
   }
 }
 
@@ -67,26 +95,25 @@
 @mixin sub-text {
   font-size: 14px;
   line-height: 24px;
-
-  @media (min-width: $tablet-width) {
-
-  }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 // Стили текста кнопки
 @mixin btn-text {
   font-size: 21px;
   line-height: 26px;
+}
+
+@mixin menu-text {
+  font-size: 18px;
+  line-height: 40px;
 
   @media (min-width: $tablet-width) {
-
+    font-size: 14px;
+    line-height: 26px;
   }
 
   @media (min-width: $desktop-width) {
-
+    font-size: 14px;
+    line-height: 26px;
   }
 }
