@@ -24,6 +24,11 @@
   }
 
   &--sightseeing {
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
     @include desktop {
       flex-direction: row;
       justify-content: space-between;
@@ -33,6 +38,50 @@
   &--sightseeing .form__item-values {
     @include tablet {
       width: 50%;
+    }
+
+    label:before {
+      content: "";
+      min-width: 56px;
+      height: 56px;
+      background-color: $input-bg-color;
+      display: inline-block;
+      border-radius: 10%;
+      vertical-align: middle;
+    }
+
+    input:checked + label:before {
+      content: "";
+      display: inline-block;
+      background: $input-bg-color url(../img/icon-tick.svg) no-repeat 50% 50%;
+    }
+  }
+
+  &--experience {
+    label {
+      position: relative;
+    }
+    input[type="radio"] + label:before {
+      content: "";
+      min-width: 56px;
+      height: 56px;
+      display: inline-block;
+      background-color: $input-bg-color;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+
+    input[type="radio"]:checked + label:after {
+      content: "";
+      min-width: 22px;
+      height: 22px;
+      display: inline-block;
+      background-color: $main-text-color;
+      border-radius: 50%;
+      vertical-align: middle;
+      position: absolute;
+      top: 17px;
+      left: 17px;
     }
   }
 }
@@ -170,6 +219,11 @@
   margin-bottom: 20px;
   width: 100%;
   background-color: $input-bg-color;
+}
+
+.form__item input[type="checkbox"],
+.form__item input[type="radio"] {
+  display: none;
 }
 
 .form__sub-text {
