@@ -1,11 +1,29 @@
 .header {
-  background-color: $main-bg-color;
-
+  margin-bottom: -27px;
   @include tablet {
     background-color: inherit;
   }
 
   @include desktop {
     background-color: inherit;
+  }
+}
+
+.header__container {
+  display: flex;
+}
+
+.header__menu-icon {
+  background-color: inherit;
+  margin-left: 65px;
+  align-self: flex-start;
+  margin-top: 17px;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
   }
 }

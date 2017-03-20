@@ -19,6 +19,7 @@
 
 .intro__title {
   @include main-title;
+  padding-bottom: 30px;
 }
 
 .intro__text {

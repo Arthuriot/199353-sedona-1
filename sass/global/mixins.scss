@@ -30,7 +30,6 @@
 @mixin container-style {
   width: 320px;
   margin: 0 auto;
-  position: relative;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -95,6 +94,7 @@
 @mixin sub-text {
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
 }
 
 // Стили текста кнопки

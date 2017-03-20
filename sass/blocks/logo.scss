@@ -1,9 +1,21 @@
 .logo {
+  width: 102px;
+  height: 84px;
+  margin-left: 110px;
+
   @include tablet {
-    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -51px;
+    z-index: 10;
   }
 
   @include desktop {
-    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -51px;
+    z-index: 10;
   }
 }

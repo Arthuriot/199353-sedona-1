@@ -11,24 +11,30 @@
 <body>
   <div class="box-wrapper">
 
+    <nav class="menu menu--closed">
+      <button class="menu__close" type="button">
+        <img src="img/icon-cross.svg" width="23" height="22" alt="Крест">
+      </button>
+      <ul class="menu__list">
+        <li class="menu__item"><a>Главная</a></li>
+        <li class="menu__item"><a href="photos.html">Фото и видео</a></li>
+        <li class="menu__item"><a href="form.html">Форма отзыва</a></li>
+        <li class="menu__item"><a href="#">HTML academy</a></li>
+      </ul>
+    </nav>
+
     <header class="header">
       <div class="header__container">
 
         <div class="logo">
-          <a class="logo__link" href="index.html">Логотип</a>
+          <a class="logo__link">
+            <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седоны">
+          </a>
         </div>
 
-        <nav class="menu menu--closed">
-          <button class="menu__toggle" type="button">Открыть меню</button>
-          <div class="menu__container">
-            <ul class="menu__list">
-              <li class="menu__item"><a href="index.html">Главная</a></li>
-              <li class="menu__item"><a>Фото и видео</a></li>
-              <li class="menu__item"><a href="form.html">Форма отзыва</a></li>
-              <li class="menu__item"><a href="#">HTML academy</a></li>
-            </ul>
-          </div>
-        </nav>
+        <button class="header__menu-icon" type="button">
+          <img src="img/icon-menu.svg" width="23" height="21" alt="Бургер">
+        </button>
 
       </div>
     </header>
@@ -132,6 +138,7 @@
     </footer>
 
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

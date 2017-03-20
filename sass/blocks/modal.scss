@@ -1,21 +1,33 @@
 .modal {
+  max-width: 100%;
+  max-height: 100%;
   margin: 0 auto;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-  @include tablet {
-    &--alert {
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 999;
+
+  background-color: $tablet-desktop-header-bg-color;
+
+  &--alert {
+    @include tablet {
       width: 400px;
     }
-
-    &--success {
-      width: 640px;
+    @include desktop {
+      width: 400px;
     }
   }
-  @include desktop {
-    &--alert {
-      width: 400px;
+
+  &--success {
+    @include tablet {
+      width: 640px;
     }
 
-    &--success {
+    @include desktop {
       width: 640px;
     }
   }
@@ -59,4 +71,8 @@
 
 .modal__text {
   @include sub-text;
+}
+
+.modal-closed {
+  display: none;
 }
