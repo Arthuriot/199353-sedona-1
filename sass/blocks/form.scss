@@ -1,5 +1,6 @@
 .form {
   @include container-style;
+
   @include tablet {
     display: flex;
     flex-direction: row;
@@ -20,6 +21,11 @@
   flex-direction: column;
 
   &--contacts {
+    label {
+      @include desktop {
+        padding-top: 20px;
+      }
+    }
     @include desktop {
       flex-direction: row;
     }
@@ -127,50 +133,56 @@
   padding-top: 20px;
   width: 100%;
 
-  @include tablet {
-    &--initials {
+  &--initials {
+    label {
+      padding-top: 20px;
+    }
+
+    @include tablet {
       order: 2;
       width: 50%;
     }
 
-    &--contacts {
-      order: 3;
-    }
-
-    &--experience {
-      order: 1;
+    @include desktop {
+      order: 2;
       width: 50%;
-    }
-
-    &--sightseeing {
-      order: 4;
-    }
-
-    &--emotions {
-      order: 5;
     }
   }
 
-  @include desktop {
-    &--initials {
-      order: 2;
-      width: 50%;
-    }
-
-    &--contacts {
+  &--contacts {
+    @include tablet {
       order: 3;
     }
+    @include desktop {
+      order: 3;
+    }
+  }
 
-    &--experience {
+  &--experience {
+    @include tablet {
       order: 1;
       width: 50%;
     }
+    @include desktop {
+      order: 1;
+      width: 50%;
+    }
+  }
 
-    &--sightseeing {
+  &--sightseeing {
+    @include tablet {
       order: 4;
     }
+    @include desktop {
+      order: 4;
+    }
+  }
 
-    &--emotions {
+  &--emotions {
+    @include tablet {
+      order: 5;
+    }
+    @include desktop {
       order: 5;
     }
   }
@@ -178,9 +190,10 @@
 
 .form__item textarea {
   width: 100%;
-  background-color: $input-icon-bg-color;
+  background-color: $input-bg-color;
   border: none;
   margin-bottom: 51px;
+  padding: 20px;
 
   @include tablet {
     margin-bottom: 60px;
@@ -235,9 +248,12 @@
 .form__item-values input[type="text"],
 .form__item-values input[type="tel"],
 .form__item-values input[type="email"] {
-  margin-bottom: 20px;
   width: 100%;
+  margin-bottom: 20px;
   background-color: $input-bg-color;
+
+  border: none;
+  padding: 20px;
 }
 
 .form__item input[type="checkbox"],

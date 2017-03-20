@@ -1,6 +1,17 @@
 .video__container {
   @include container-style;
   text-align: center;
+  padding-top: 35px;
+  border-top: 1px solid $input-bg-color-hover;
+
+  @include tablet {
+    padding-top: 65px;
+    border: none;
+  }
+
+  @include desktop {
+    border: none;
+  }
 }
 
 .video__title {

@@ -7,7 +7,15 @@ body {
   width: 100%;
   text-transform: uppercase;
   @include font-family;
+  @include desktop {
+    background-color: #f2f2f2;
+  }
 }
+
+::-webkit-input-placeholder {color:#000; font-weight: bold;}
+::-moz-placeholder          {color:#000; font-weight: bold;}
+:-moz-placeholder           {color:#000; font-weight: bold;}
+:-ms-input-placeholder      {color:#000; font-weight: bold;}
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
