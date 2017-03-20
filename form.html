@@ -11,24 +11,30 @@
 <body>
   <div class="box-wrapper">
 
+    <nav class="menu menu--closed">
+      <button class="menu__close" type="button">
+        <img src="img/icon-cross.svg" width="23" height="22" alt="Крест">
+      </button>
+      <ul class="menu__list">
+        <li class="menu__item"><a>Главная</a></li>
+        <li class="menu__item"><a href="photos.html">Фото и видео</a></li>
+        <li class="menu__item"><a href="form.html">Форма отзыва</a></li>
+        <li class="menu__item"><a href="#">HTML academy</a></li>
+      </ul>
+    </nav>
+
     <header class="header">
       <div class="header__container">
 
         <div class="logo">
-          <a class="logo__link" href="index.html">Логотип</a>
+          <a class="logo__link">
+            <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седоны">
+          </a>
         </div>
 
-        <nav class="menu menu--closed">
-          <button class="menu__toggle" type="button">Открыть меню</button>
-          <div class="menu__container">
-            <ul class="menu__list">
-              <li class="menu__item"><a href="index.html">Главная</a></li>
-              <li class="menu__item"><a href="photos.html">Фото и видео</a></li>
-              <li class="menu__item"><a>Форма отзыва</a></li>
-              <li class="menu__item"><a href="#">HTML academy</a></li>
-            </ul>
-          </div>
-        </nav>
+        <button class="header__menu-icon" type="button">
+          <img src="img/icon-menu.svg" width="23" height="21" alt="Бургер">
+        </button>
 
       </div>
     </header>
@@ -134,29 +140,28 @@
       </div>
     </footer>
 
-    <section class="overlay">
-      <div class="modal modal--alert">
-        <div class="modal__container modal__container--alert">
-          <h1 class="modal__title">Что-то пошло не так!</h1>
-          <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
-          <a class="btn btn--alert" href="#">ОК</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="overlay">
-      <div class="modal modal--success">
-        <div class="modal__container modal__container--success">
-          <h1 class="modal__title">Ваш отзыв отправлен!</h1>
-          <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
-        </div>
-        <div class="btn__container">
-          <a class="btn btn--success" href="#">Закрыть окно</a>
-        </div>
-      </div>
-    </section>
-
   </div>
-</body>
+  <section class="overlay" id="modal-alert">
+    <div class="modal modal--alert">
+      <div class="modal__container modal__container--alert">
+        <h1 class="modal__title">Что-то пошло не так!</h1>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
+        <a class="btn btn--modal btn--alert" href="#">ОК</a>
+      </div>
+    </div>
+  </section>
 
+  <section class="overlay" id="modal-success">
+    <div class="modal modal--success">
+      <div class="modal__container modal__container--success">
+        <h1 class="modal__title">Ваш отзыв отправлен!</h1>
+        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="btn__container">
+        <a class="btn btn--modal btn--success" href="#">Закрыть окно</a>
+      </div>
+    </div>
+  </section>
+<script src="js/script.js"></script>
+</body>
 </html>

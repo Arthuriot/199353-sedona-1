@@ -72,10 +72,10 @@
 .photos__author {
   color: $sub-text-color;
   @include tablet {
-    flex: 1;
+    flex-grow: 1;
   }
   @include desktop {
-    flex: 1;
+    flex-grow: 1;
   }
 }
 
