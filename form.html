@@ -13,7 +13,9 @@
 
     <nav class="menu menu--closed">
       <button class="menu__close" type="button">
-        <img src="img/icon-cross.svg" width="23" height="22" alt="Крест">
+        <svg>
+          <use xlink:href="../img/sprite.svg#icon-cross"></use>
+        </svg>
       </button>
       <ul class="menu__list">
         <li class="menu__item"><a>Главная</a></li>
@@ -28,18 +30,34 @@
 
         <div class="logo">
           <a class="logo__link">
-            <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седоны">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="../img/logo-sedona-desktop.svg">
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/logo-sedona-tablet.svg">
+              <img src="./img/logo-sedona-mobile.svg" alt="Логотип Седоны">
+            </picture>
           </a>
         </div>
 
         <button class="header__menu-icon" type="button">
-          <img src="img/icon-menu.svg" width="23" height="21" alt="Бургер">
+          <svg preserveAspectRatio="none">
+            <use xlink:href="../img/sprite.svg#icon-menu"></use>
+          </svg>
         </button>
 
       </div>
     </header>
     <main>
       <div class="promo promo--form">
+        <svg class="promo__text promo__text--form">
+          <use xlink:href="../img/sprite.svg#text-sedona"></use>
+        </svg>
+        <svg class="promo__bottom" preserveAspectRatio="none">
+          <use xlink:href="../img/sprite.svg#bg-intro-triangle-mobile"></use>
+        </svg>
       </div>
 
       <section class="intro">
@@ -127,14 +145,30 @@
         </div>
 
         <div class="social">
-          <a href="#" class="social__link social__link--twitter">Twitter</a>
-          <a href="#" class="social__link social__link--facebook">Facebook</a>
-          <a href="#" class="social__link social__link--youtube">Youtube</a>
+          <a href="#" class="social__link social__link--twitter">
+            <svg preserveAspectRatio="none">
+              <use xlink:href="../img/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a href="#" class="social__link social__link--facebook">
+            <svg preserveAspectRatio="none">
+              <use xlink:href="../img/sprite.svg#icon-fb"></use>
+            </svg>
+          </a>
+          <a href="#" class="social__link social__link--youtube">
+            <svg preserveAspectRatio="none">
+              <use xlink:href="../img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
         </div>
 
         <div class="footer__copyright">
           <span>Разработано</span>
-          <a href="#" class="html-academy-icon">HTML academy</a>
+          <a href="#" class="html-academy-icon">
+            <svg preserveAspectRatio="none">
+              <use xlink:href="../img/sprite.svg#logo-htmlacademy"></use>
+            </svg>
+          </a>
         </div>
 
       </div>

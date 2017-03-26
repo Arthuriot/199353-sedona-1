@@ -60,7 +60,7 @@
 .photos__description {
   display: flex;
   flex-direction: column;
-  padding-top: 18px;
+  padding-top: 17px;
 
   @include tablet {
     flex-direction: row;
@@ -79,7 +79,15 @@
   }
 }
 
+.photos__description svg {
+  display: inline-block;
+
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
 .photos__title {
+  padding-bottom: 3px;
   @include sub-text;
   @include tablet {
     width: 100%;
@@ -92,6 +100,7 @@
 
 .photos__author {
   color: $sub-text-color;
+  display: block;
   @include tablet {
     flex-grow: 1;
   }
@@ -101,10 +110,19 @@
 }
 
 .photos__likes {
+  display: block;
+  margin-top: 10000px;
+  font-weight: bold;
   @include tablet {
     align-self: flex-end;
   }
   @include desktop {
     align-self: center;
+  }
+
+  &::before {
+    content: url("../img/icon-like.svg");
+    width: 22px;
+    height: 20px;
   }
 }

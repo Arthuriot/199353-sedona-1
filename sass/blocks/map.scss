@@ -2,4 +2,30 @@
   background: url("../img/bg-map-mobile@1x.jpg") no-repeat;
   background-size: 100%;
   min-height: 350px;
+
+  @include retina {
+    background: url("../img/bg-map-mobile@2x.jpg") no-repeat;
+    background-size: 100%;
+  }
+
+  @include tablet {
+    background: url("../img/bg-map-tablet@1x.jpg") no-repeat;
+    background-size: 100%;
+
+    @include retina {
+      background: url("../img/bg-map-tablet@2x.jpg") no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  @include desktop {
+    background: url("../img/bg-map-desktop@1x.jpg") no-repeat;
+    background-size: 100%;
+
+    @include retina {
+      background: url("../img/bg-map-desktop@2x.jpg") no-repeat;
+      background-size: 100%;
+    }
+  }
+
 }

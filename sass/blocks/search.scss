@@ -1,8 +1,8 @@
 .search__container {
   @include container-style;
   text-align: center;
-  padding-top: 25px;
-  padding-bottom: 50px;
+  padding-top: 28px;
+  padding-bottom: 49px;
 
   @include tablet {
     padding-top: 45px;
@@ -17,11 +17,14 @@
 
 .search__title {
   @include search-title;
+  margin-bottom: 19px;
 }
 
 .search__text {
   @include sub-text;
   color: $sub-text-color;
+  line-height: 24px;
+  margin-bottom: 35px;
 
   @include tablet {
     padding: 0 100px;

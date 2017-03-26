@@ -1,7 +1,60 @@
 .promo {
+  padding-top: 90px;
+  text-align: center;
   width: 100%;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center;
   background-color: $promo-index-bg-color;
   min-height: 389px;
   background-position: 50% 50%;
+
+  @include retina {
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat center;
+    background-size: 768px auto;
+    background-position: -225px 0%;
+  }
+
+  @include tablet {
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center;
+
+    @include retina {
+      background: url("../img/bg-back-tablet@2x.jpg") no-repeat center;
+      background-size: 768px auto;
+    }
+  }
+
+  @include desktop {
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center;
+
+    @include retina {
+      background: url("../img/bg-back-desktop@2x.jpg") no-repeat center;
+      background-size: 1200px auto;
+    }
+  }
+
+  &--photos {
+    padding-top: 52px;
+    min-height: 158px;
+    background-position: -226px -231px;
+  }
+}
+
+.promo__text {
+  width: 280px;
+  height: 214px;
+
+  &--photos, &--form {
+    width: 229px;
+    height: 39px;
+  }
+}
+
+.promo__bottom {
+  width: 100%;
+  height: 26.111px;
+  margin-top: 56px;
+
+  &--photos, &--form {
+    margin-top: 38px;
+    display: block;
+  }
 }
