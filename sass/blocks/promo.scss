@@ -1,7 +1,7 @@
 .promo {
-  padding-top: 90px;
   text-align: center;
   width: 100%;
+  padding-top: 90px;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center;
   background-color: $promo-index-bg-color;
   min-height: 389px;
@@ -23,38 +23,107 @@
   }
 
   @include desktop {
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat;
 
     @include retina {
-      background: url("../img/bg-back-desktop@2x.jpg") no-repeat center;
+      background: url("../img/bg-back-desktop@2x.jpg") no-repeat;
       background-size: 1200px auto;
+      background-position: 50% 0%;
+      padding-top: 0;
     }
   }
 
-  &--photos {
-    padding-top: 52px;
+  &::after {
+    content: url('data:image/svg+xml;utf8,
+    <svg xmlns="http://www.w3.org/2000/svg" id="bg-intro-triangle-mobile" viewBox="440.469 30.889 320 26.111">
+      <polygon fill="#FFFFFF" points="760.469,57 760.469,30.889 599.955,57"/>
+      <polygon fill="#FFFFFF" points="440.469,57 599.955,57 440.469,31.056"/>
+    </svg>'
+    );
+    width: 100%;
+    height: 26.111px;
+
+    @include tablet {
+      content: url('data:image/svg+xml;utf8,
+      <svg xmlns="http://www.w3.org/2000/svg" id="bg-intro-triangle-tablet" width="768px" height="57px" viewBox="216.469 0 768 57">
+        <g>
+          <polygon fill="#FFFFFF" points="249.566,23.71 216.469,20.565 216.469,57 599.955,57 249.566,0"/>
+          <polygon fill="#FFFFFF" points="950.346,23.71 950.346,0 599.955,57 984.469,57 984.469,20.468"/>
+        </g>
+      </svg>'
+      );
+      width: 100%;
+      height: 57px;
+    }
+
+    @include desktop {
+      content: url('data:image/svg+xml;utf8,
+      <svg xmlns="http://www.w3.org/2000/svg" id="bg-intro-triangle-desktop" width="1199.91px" height="57px" viewBox="0 0 1199.91 57">
+        <g>
+          <polygon fill="#FFFFFF" points="250.08,23.71 0.514,0 0.514,57 250.08,57 600.469,57 250.08,0"/>
+          <polygon fill="#FFFFFF" points="950.859,23.71 950.859,0 600.469,57 950.859,57 1200.424,57 1200.424,0"/>
+        </g>
+      </svg>'
+      );
+      width: 100%;
+      height: 57px;
+    }
+  }
+
+  &--photos, &--form {
+    display: block;
+    background-position: -225px -231px;
+    padding-top: 30px;
     min-height: 158px;
-    background-position: -226px -231px;
+
+    @include tablet {
+      background-position: 75% 100%;
+      padding-top: 110px;
+    }
+
+    @include desktop {
+      background-position: 75% 100%;
+    }
   }
 }
 
 .promo__text {
+  display: block;
+  margin: 0 auto;
   width: 280px;
   height: 214px;
+  margin-bottom: 56px;
+
+  @include tablet {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 25px;
+  }
+
+  @include desktop {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 111px;
+    position: relative;
+    top: 78px;
+  }
 
   &--photos, &--form {
     width: 229px;
-    height: 39px;
-  }
-}
+    height: 81px;
+    margin-bottom: 18px;
 
-.promo__bottom {
-  width: 100%;
-  height: 26.111px;
-  margin-top: 56px;
+    @include tablet {
+      width: 100%;
+      height: 79px;
+      margin-bottom: 60px;
+    }
 
-  &--photos, &--form {
-    margin-top: 38px;
-    display: block;
+    @include desktop {
+      width: 100%;
+      height: 80px;
+      margin-bottom: 136px;
+      top: 72px;
+    }
   }
 }

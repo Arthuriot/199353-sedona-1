@@ -17,11 +17,13 @@
     @include tablet {
       width: 458px;
       margin: 0 auto;
+      padding-left: 136px;
     }
 
     @include desktop {
       width: 458px;
       margin: 0 auto;
+      padding-left: 135px;
     }
   }
 

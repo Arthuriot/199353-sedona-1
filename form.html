@@ -18,9 +18,9 @@
         </svg>
       </button>
       <ul class="menu__list">
-        <li class="menu__item"><a>Главная</a></li>
+        <li class="menu__item"><a href="index.html">Главная</a></li>
         <li class="menu__item"><a href="photos.html">Фото и видео</a></li>
-        <li class="menu__item"><a href="form.html">Форма отзыва</a></li>
+        <li class="menu__item"><a>Форма отзыва</a></li>
         <li class="menu__item"><a href="#">HTML academy</a></li>
       </ul>
     </nav>
@@ -29,7 +29,7 @@
       <div class="header__container">
 
         <div class="logo">
-          <a class="logo__link">
+          <a class="logo__link" href="index.html">
             <picture>
               <source
                 media="(min-width: 1200px)"
@@ -52,11 +52,8 @@
     </header>
     <main>
       <div class="promo promo--form">
-        <svg class="promo__text promo__text--form">
+        <svg class="promo__text promo__text--form" preserveAspectRatio="none">
           <use xlink:href="../img/sprite.svg#text-sedona"></use>
-        </svg>
-        <svg class="promo__bottom" preserveAspectRatio="none">
-          <use xlink:href="../img/sprite.svg#bg-intro-triangle-mobile"></use>
         </svg>
       </div>
 
@@ -93,10 +90,20 @@
             <div class="form__item-values form__item-values--phone">
               <label for="phone">Контактный телефон*:</label>
               <input type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+              <span class="form__icon form__icon--phone">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#icon-phone"></use>
+                </svg>
+              </span>
             </div>
             <div class="form__item-values form__item-values--email">
               <label for="e-mail">Электронная почта*:</label>
               <input type="email" name="email" id="e-mail" placeholder="Введите e-mail" required>
+              <span class="form__icon form__icon--email">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#icon-mail" preserveAspectRatio="none"></use>
+                </svg>
+              </span>
             </div>
           </div>
         </section>

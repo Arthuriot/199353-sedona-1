@@ -30,6 +30,7 @@
   position: absolute;
   top: 17px;
   right: 20px;
+
   @include tablet {
     display: none;
   }
@@ -60,66 +61,80 @@
     padding: 20px 0;
     width: 192px;
     border: none;
-
-    &:first-child {
-      border-top: none;
-      text-align: left;
-      padding-left: 49px;
-    }
-
-    &:nth-child(2) {
-      text-align: center;
-      margin-right: 209px;
-    }
-
-    &:nth-child(3) {
-      text-align: center;
-    }
-
-    &:nth-child(4) {
-      text-align: right;
-      padding-right: 26px;
-    }
-
-    &:nth-child(6) {
-      margin-right: 209px;
-    }
-
-    &:nth-child(10) {
-      margin-right: 209px;
-    }
   }
 
   @include desktop {
     width: 300px;
     border: none;
-    padding: 20px 0;
+    padding-top: 14px;
+    padding-bottom: 16px;
+  }
 
-    &:first-child {
+  &:first-child {
+    @include tablet {
+      border-top: none;
+      text-align: left;
+      padding-left: 49px;
+    }
+
+    @include desktop {
       text-align: left;
       padding-left: 91px;
     }
+  }
 
-    &:nth-child(2) {
-        text-align: center;
-        margin-right: 382px;
+  &:nth-child(2) {
+    @include tablet {
+      text-align: center;
+      margin-right: 209px;
     }
 
-    &:nth-child(3) {
-        text-align: center;
+    @include desktop {
+      text-align: right;
+      margin-right: 382px;
+    }
+  }
+
+  &:nth-child(3) {
+    @include tablet {
+      text-align: center;
     }
 
-    &:nth-child(4) {
-        text-align: right;
-        padding-right: 70px;
+    @include desktop {
+      text-align: left;
+      padding-right: 35px;
+    }
+  }
+
+  &:nth-child(4) {
+    @include tablet {
+      text-align: right;
+      padding-right: 26px;
     }
 
-    &:nth-child(6) {
-        margin-right: 209px;
+    @include desktop {
+      text-align: right;
+      padding-right: 70px;
+    }
+  }
+
+  &:nth-child(6) {
+    @include tablet {
+      margin-right: 209px;
     }
 
-    &:nth-child(10) {
-        margin-right: 209px;
+    @include desktop {
+      margin-right: 209px;
+    }
+  }
+
+  &:nth-child(10) {
+    @include tablet {
+      margin-right: 209px;
+    }
+
+    @include desktop {
+      margin-right: 209px;
     }
   }
 }

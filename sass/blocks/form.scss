@@ -202,9 +202,11 @@
 
 .form__item-values {
   display: flex;
+  position: relative;
 
   &--phone {
     flex-direction: column;
+
     @include desktop {
       flex-direction: row;
       flex: 1;
@@ -249,11 +251,18 @@
 .form__item-values input[type="tel"],
 .form__item-values input[type="email"] {
   width: 100%;
-  margin-bottom: 20px;
-  background-color: $input-bg-color;
 
+  background-color: $input-bg-color;
+  outline: none;
   border: none;
+
+  margin-bottom: 20px;
   padding: 20px;
+}
+
+.form__item-values input[type="tel"],
+.form__item-values input[type="email"] {
+  padding-right: 78px;
 }
 
 .form__item input[type="checkbox"],
@@ -280,5 +289,42 @@
     display: block;
     width: 480px;
     text-align: right;
+  }
+}
+
+.form__icon {
+  align-self: flex-end;
+  display: block;
+  position: absolute;
+  background-color: $input-icon-bg-color;
+
+  top: 38px;
+  right: 0;
+
+  @include desktop {
+    top: 0;
+  }
+
+  &--phone {
+    padding-left: 21px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 19px;
+  }
+
+  &--phone svg {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+
+  &--email {
+    padding: 21px 19px;
+  }
+
+  &--email svg {
+    display: block;
+    width: 20px;
+    height: 16px;
   }
 }

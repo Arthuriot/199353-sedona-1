@@ -29,7 +29,7 @@
       <div class="header__container">
 
         <div class="logo">
-          <a class="logo__link">
+          <a class="logo__link" href="index.html">
             <picture>
               <source
                 media="(min-width: 1200px)"
@@ -54,9 +54,6 @@
       <div class="promo promo--photos">
         <svg class="promo__text promo__text--photos" preserveAspectRatio="none">
           <use xlink:href="../img/sprite.svg#text-sedona"></use>
-        </svg>
-        <svg class="promo__bottom promo__bottom--photos" preserveAspectRatio="none">
-          <use xlink:href="../img/sprite.svg#bg-intro-triangle-mobile"></use>
         </svg>
       </div>
 
@@ -171,26 +168,35 @@
       </div>
 
       <section class="video">
-        <div class="video__container">
-          <div class="video__description">
-            <h1 class="video__title">Все еще сомневаетесь?</h1>
-            <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          </div>
-          <div class="video__player">
-            <picture>
-              <source
-                media="(min-width: 1200px)"
-                srcset="./img/video-desktop@1x.jpg 1x,
-                        ./img/video-desktop@2x.jpg 2x">
-              <source
-                media="(min-width: 768px)"
-                srcset="./img/video-tablet@1x.jpg 1x,
-                        ./img/video-tablet@2x.jpg 2x">
-              <img
-                src="./img/video-mobile@1x.jpg" alt="Видео о Седоне"
-                srcset="./img/video-mobile@2x.jpg 2x">
-            </picture>
-          </div>
+        <div class="video__description">
+          <h1 class="video__title">Все еще сомневаетесь?</h1>
+          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
+        <div class="video__player">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="./img/video-desktop@1x.jpg 1x,
+                      ./img/video-desktop@2x.jpg 2x">
+            <source
+              media="(min-width: 768px)"
+              srcset="./img/video-tablet@1x.jpg 1x,
+                      ./img/video-tablet@2x.jpg 2x">
+            <img
+              src="./img/video-mobile@1x.jpg" alt="Видео о Седоне"
+              srcset="./img/video-mobile@2x.jpg 2x">
+          </picture>
+        </div>
+        <div class="video__controls">
+          <svg class="video__icon-replay">
+            <use xlink:href="../img/sprite.svg#icon-video-replay"></use>
+          </svg>
+          <svg class="video__icon-subtitles">
+            <use xlink:href="../img/sprite.svg#icon-video-subtitles"></use>
+          </svg>
+          <svg class="video__icon-fullscreen">
+            <use xlink:href="../img/sprite.svg#icon-video-fullscreen"></use>
+          </svg>
         </div>
       </section>
     </main>
@@ -221,8 +227,8 @@
 
         <div class="footer__copyright">
           <span>Разработано</span>
-          <a href="#" class="html-academy-icon">
-            <svg preserveAspectRatio="none">
+          <a href="#">
+            <svg>
               <use xlink:href="../img/sprite.svg#logo-htmlacademy"></use>
             </svg>
           </a>
