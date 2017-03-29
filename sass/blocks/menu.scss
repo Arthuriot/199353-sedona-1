@@ -30,6 +30,7 @@
   position: absolute;
   top: 17px;
   right: 20px;
+
   @include tablet {
     display: none;
   }
@@ -39,83 +40,108 @@
   }
 }
 
+.menu__close svg {
+  width: 22.199px;
+  height: 22.199px;
+}
+
 .menu__item {
-  padding: 10px 0;
+  padding: 7px 0;
   font-weight: bold;
   @include menu-text;
 
   border-top: 1px solid $menu-item-top-border-color;
   border-bottom: 1px solid $menu-item-bottom-border-color;
 
+  &:last-child {
+    padding-bottom: 6px;
+  }
+
   @include tablet {
-    padding: 20px 0;
+    padding-top: 14px;
+    padding-bottom: 16px;
     width: 192px;
     border: none;
-
-    &:first-child {
-      border-top: none;
-      text-align: left;
-      padding-left: 49px;
-    }
-
-    &:nth-child(2) {
-        text-align: center;
-        margin-right: 209px;
-    }
-
-    &:nth-child(3) {
-        text-align: center;
-    }
-
-    &:nth-child(4) {
-        text-align: right;
-        padding-right: 26px;
-    }
-
-    &:nth-child(6) {
-        margin-right: 209px;
-    }
-
-    &:nth-child(10) {
-        margin-right: 209px;
-    }
   }
 
   @include desktop {
     width: 300px;
     border: none;
-    padding: 20px 0;
+    padding-top: 14px;
+    padding-bottom: 16px;
+  }
 
-    &:first-child {
+  &:first-child {
+    @include tablet {
+      border-top: none;
+      text-align: left;
+      padding-left: 49px;
+    }
+
+    @include desktop {
       text-align: left;
       padding-left: 91px;
     }
+  }
 
-    &:nth-child(2) {
-        text-align: center;
-        margin-right: 382px;
+  &:nth-child(2) {
+    @include tablet {
+      text-align: right;
+      padding-right: 7px;
+      margin-right: 201px;
     }
 
-    &:nth-child(3) {
-        text-align: center;
+    @include desktop {
+      text-align: right;
+      margin-right: 382px;
+    }
+  }
+
+  &:nth-child(3) {
+    @include tablet {
+      text-align: left;
     }
 
-    &:nth-child(4) {
-        text-align: right;
-        padding-right: 70px;
+    @include desktop {
+      text-align: left;
+      padding-right: 35px;
+    }
+  }
+
+  &:nth-child(4) {
+    @include tablet {
+      text-align: right;
+      padding-right: 26px;
     }
 
-    &:nth-child(6) {
-        margin-right: 209px;
+    @include desktop {
+      text-align: right;
+      padding-right: 70px;
+    }
+  }
+
+  &:nth-child(6) {
+    @include tablet {
+      margin-right: 209px;
     }
 
-    &:nth-child(10) {
-        margin-right: 209px;
+    @include desktop {
+      margin-right: 209px;
+    }
+  }
+
+  &:nth-child(10) {
+    @include tablet {
+      margin-right: 209px;
+    }
+
+    @include desktop {
+      margin-right: 209px;
     }
   }
 }
 
-.menu__item a {
+.menu__link {
   color: $secondary-text-color;
 
   @include tablet {
@@ -124,5 +150,47 @@
 
   @include desktop {
     color: $main-text-color;
+  }
+
+  &:hover {
+    @include tablet {
+      color: $main-bg-color;
+    }
+
+    @include desktop {
+      color: $main-bg-color;
+    }
+  }
+
+  &:active {
+    @include tablet {
+      color: $main-text-color;
+      opacity: 0.3;
+    }
+
+    @include desktop {
+      color: $main-text-color;
+      opacity: 0.3;
+    }
+  }
+
+  &--active {
+    @include tablet {
+      color: $menu-item-active-text-color;
+    }
+
+    @include desktop {
+      color: $menu-item-active-text-color;
+    }
+  }
+
+  &--active:hover {
+    @include tablet {
+      color: $menu-item-active-text-color-hover;
+    }
+
+    @include desktop {
+      color: $menu-item-active-text-color-hover;
+    }
   }
 }

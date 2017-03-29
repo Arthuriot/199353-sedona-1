@@ -1,12 +1,13 @@
-.video__container {
-  @include container-style;
+.video {
   text-align: center;
-  padding-top: 35px;
+  padding-top: 33px;
   border-top: 1px solid $input-bg-color-hover;
+  margin-bottom: 42px;
 
   @include tablet {
     padding-top: 65px;
     border: none;
+    padding: 0 60px;
   }
 
   @include desktop {
@@ -15,22 +16,163 @@
 }
 
 .video__title {
-  @include main-title;
+  @include search-title;
+  margin-bottom: 26px;
 }
 
 .video__text {
   @include sub-text;
+  padding: 0 40px;
+  line-height: 24px;
 }
 
 .video__description {
+  margin-bottom: 35px;
   @include desktop {
     padding: 65px 345px;
   }
 }
 
 .video__player {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: -1;
   @include desktop {
     width: 800px;
     margin: 0 auto;
+    z-index: 1;
   }
+
+  &::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: $tablet-desktop-header-bg-color;
+    z-index: 10;
+    border-radius: 50%;
+    bottom: 17px;
+    left: 78px;
+    position: absolute;
+
+    @include tablet {
+      bottom: 42px;
+      left: 207px;
+    }
+
+    @include desktop {
+      bottom: 42px;
+      left: 207px;
+    }
+  }
+
+  &::after {
+    content: "";
+    background-color: #434040;
+    opacity: 0.6;
+    margin: 0 20px;
+    margin-top: -45px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    border: 22px solid $main-text-color;
+    border-bottom: 20px solid $main-text-color;
+    border-right: 23px solid $main-text-color;
+
+    @include tablet {
+      margin: 0;
+      margin-top: -93px;
+      border: 45px solid $main-text-color;
+      border-left: 93px solid $main-text-color;
+      border-right: 166px solid $main-text-color;
+    }
+
+    @include desktop {
+      margin: 0;
+      margin-top: -93px;
+      border: 45px solid $main-text-color;
+      border-left: 93px solid $main-text-color;
+      border-right: 166px solid $main-text-color;
+    }
+  }
+}
+
+.video__controls {
+  padding-top: 22px;
+  padding-bottom: 23px;
+  margin: 0 20px;
+  background-color: $input-bg-color;
+  display: flex;
+  justify-content: flex-start;
+
+  @include tablet {
+    background-color: transparent;
+    margin-top: -93px;
+    padding-top: 35px;
+  }
+
+  @include desktop {
+    background-color: transparent;
+    margin-left: 210px;
+    margin-right: 220px;
+    margin-top: -93px;
+    padding-top: 35px;
+  }
+}
+
+.video__controls svg {
+  fill: $video-icons-color;
+
+  @include tablet {
+    fill: $tablet-desktop-header-bg-color;
+  }
+
+  @include desktop {
+    fill: $tablet-desktop-header-bg-color;
+    z-index: 1;
+  }
+
+  &:hover {
+    fill: $sub-text-color;
+
+    // @include tablet {
+    //   fill: $tablet-desktop-header-bg-color;
+    // }
+    //
+    // @include desktop {
+    //   fill: $tablet-desktop-header-bg-color;
+    // }
+  }
+
+  &:active {
+    fill: $video-icons-color-down;
+
+    // @include tablet {
+    //   fill: $tablet-desktop-header-bg-color;
+    // }
+    //
+    // @include desktop {
+    //   fill: $tablet-desktop-header-bg-color;
+    // }
+  }
+}
+
+.video__icon-replay {
+  width: 16px;
+  height: 20px;
+  margin-right: auto;
+  margin-left: 25px;
+}
+
+.video__icon-subtitles {
+  width: 32px;
+  height: 20px;
+  margin-top: 1px;
+}
+
+.video__icon-fullscreen {
+  width: 20px;
+  height: 20px;
+  margin-top: 1px;
+  margin-left: 31px;
+  margin-right: 23px;
 }

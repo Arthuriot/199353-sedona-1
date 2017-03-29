@@ -1,12 +1,9 @@
 .intro__container {
   @include container-style;
+  padding: 0 25px;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-  &--form {
-    padding-bottom: 20px;
-  }
+  padding-top: 37px;
+  padding-bottom: 5px;
 
   @include tablet {
     padding: 45px 135px;
@@ -15,13 +12,30 @@
   @include desktop {
     padding: 45px 350px;
   }
+
+  &--photos {
+    padding-top: 38px;
+  }
+
+  &--photos h1 {
+    padding-bottom: 26px;
+  }
+
+  &--photos p {
+    line-height: 24px;
+  }
+
+  &--form {
+    padding-bottom: 20px;
+  }
 }
 
 .intro__title {
   @include main-title;
-  padding-bottom: 30px;
+  padding-bottom: 27px;
 }
 
 .intro__text {
   @include sub-text;
+  line-height: 26px;
 }

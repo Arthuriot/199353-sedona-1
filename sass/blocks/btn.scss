@@ -10,15 +10,34 @@
   text-align: center;
 
   &--search {
+    text-align: left;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 46px;
+
     @include tablet {
       width: 458px;
       margin: 0 auto;
+      padding-left: 136px;
     }
 
     @include desktop {
       width: 458px;
       margin: 0 auto;
+      padding-left: 135px;
     }
+  }
+
+  &--search:hover {
+    background-color: $btn-bg-color-hover;
+  }
+
+  &--search:active {
+    background-color: $btn-bg-color-down;
+  }
+
+  &--search:disabled {
+    background-color: $btn-bg-color-disabled;
   }
 
   &--form {

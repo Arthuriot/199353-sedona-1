@@ -1,21 +1,22 @@
 .logo {
   width: 102px;
-  height: 84px;
-  margin-left: 110px;
+  height: 83px;
+  margin-left: 109px;
+  z-index: 10;
 
   @include tablet {
     position: absolute;
     top: 0;
     left: 50%;
     margin-left: -51px;
-    z-index: 10;
   }
 
   @include desktop {
+    width: 188px;
+    height: 96px;
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -51px;
-    z-index: 10;
+    margin-left: -94px;
   }
 }

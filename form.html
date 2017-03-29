@@ -13,13 +13,15 @@
 
     <nav class="menu menu--closed">
       <button class="menu__close" type="button">
-        <img src="img/icon-cross.svg" width="23" height="22" alt="Крест">
+        <svg>
+          <use xlink:href="./img/sprite.svg#icon-cross"></use>
+        </svg>
       </button>
       <ul class="menu__list">
-        <li class="menu__item"><a>Главная</a></li>
-        <li class="menu__item"><a href="photos.html">Фото и видео</a></li>
-        <li class="menu__item"><a href="form.html">Форма отзыва</a></li>
-        <li class="menu__item"><a href="#">HTML academy</a></li>
+        <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+        <li class="menu__item"><a class="menu__link" href="photos.html">Фото и видео</a></li>
+        <li class="menu__item"><a class="menu__link menu__link--active">Форма отзыва</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">HTML academy</a></li>
       </ul>
     </nav>
 
@@ -27,19 +29,32 @@
       <div class="header__container">
 
         <div class="logo">
-          <a class="logo__link">
-            <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип Седоны">
+          <a class="logo__link" href="index.html">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="./img/logo-sedona-desktop.svg">
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/logo-sedona-tablet.svg">
+              <img src="./img/logo-sedona-mobile.svg" alt="Логотип Седоны">
+            </picture>
           </a>
         </div>
 
         <button class="header__menu-icon" type="button">
-          <img src="img/icon-menu.svg" width="23" height="21" alt="Бургер">
+          <svg preserveAspectRatio="none">
+            <use xlink:href="./img/sprite.svg#icon-menu"></use>
+          </svg>
         </button>
 
       </div>
     </header>
     <main>
       <div class="promo promo--form">
+        <svg class="promo__text promo__text--form">
+          <use xlink:href="./img/sprite.svg#text-sedona"></use>
+        </svg>
       </div>
 
       <section class="intro">
@@ -75,10 +90,20 @@
             <div class="form__item-values form__item-values--phone">
               <label for="phone">Контактный телефон*:</label>
               <input type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+              <span class="form__icon form__icon--phone">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#icon-phone"></use>
+                </svg>
+              </span>
             </div>
             <div class="form__item-values form__item-values--email">
               <label for="e-mail">Электронная почта*:</label>
               <input type="email" name="email" id="e-mail" placeholder="Введите e-mail" required>
+              <span class="form__icon form__icon--email">
+                <svg>
+                  <use xlink:href="./img/sprite.svg#icon-mail" preserveAspectRatio="none"></use>
+                </svg>
+              </span>
             </div>
           </div>
         </section>
@@ -127,14 +152,30 @@
         </div>
 
         <div class="social">
-          <a href="#" class="social__link social__link--twitter">Twitter</a>
-          <a href="#" class="social__link social__link--facebook">Facebook</a>
-          <a href="#" class="social__link social__link--youtube">Youtube</a>
+          <a href="#" class="social__link social__link--twitter">
+            <svg preserveAspectRatio="none">
+              <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          <a href="#" class="social__link social__link--facebook">
+            <svg preserveAspectRatio="none">
+              <use xlink:href="./img/sprite.svg#icon-fb"></use>
+            </svg>
+          </a>
+          <a href="#" class="social__link social__link--youtube">
+            <svg preserveAspectRatio="none">
+              <use xlink:href="./img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
         </div>
 
         <div class="footer__copyright">
           <span>Разработано</span>
-          <a href="#" class="html-academy-icon">HTML academy</a>
+          <a href="#" class="html-academy-icon">
+            <svg preserveAspectRatio="none">
+              <use xlink:href="./img/sprite.svg#logo-htmlacademy"></use>
+            </svg>
+          </a>
         </div>
 
       </div>

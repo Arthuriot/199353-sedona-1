@@ -1,9 +1,57 @@
 .social {
+  display: flex;
+  padding-left: 58px;
   @include tablet {
     width: 256px;
   }
 
   @include desktop {
     width: 400px;
+  }
+}
+
+.social__link svg {
+  fill: $secondary-text-color;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+  background-color: $main-bg-color;
+  margin-left: 6px;
+
+  &:hover {
+    background-color: $btn-bg-color-hover;
+  }
+
+  &:active {
+    background-color: $btn-bg-color-down;
+  }
+
+  &:active > svg {
+    fill: rgba(255,255,255, 0.3);
+  }
+
+  &:nth-child(2) {
+    width: 47px;
+  }
+
+  &--twitter svg {
+    width: 17.5px;
+    height: 14.663px;
+  }
+
+  &--facebook svg {
+    width: 8.672px;
+    height: 18.944px;
+    margin-top: -1px;
+  }
+
+  &--youtube svg {
+    width: 19.979px;
+    height: 14.015px;
   }
 }

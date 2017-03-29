@@ -4,7 +4,6 @@
 
 .footer__container {
   @include container-style;
-  text-align: center;
 
   @include tablet {
     display: flex;
@@ -17,7 +16,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 38px 0;
+    padding-top: 38px;
+    padding-bottom: 38px;
   }
 }
 
@@ -27,8 +27,9 @@
 
 .footer__hashtag {
   @include btn-text;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 33px;
+  padding-bottom: 36px;
+  padding-left: 71px;
   font-weight: bold;
 
   @include tablet {
@@ -45,6 +46,8 @@
 .footer__copyright {
   padding-top: 40px;
   padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
 
   @include tablet {
     width: 256px;
@@ -55,4 +58,25 @@
     width: 400px;
     padding: 0;
   }
+}
+
+.footer__copyright svg {
+  width: 26.943px;
+  height: 34.09px;
+
+  &:hover {
+    fill: $main-bg-color;
+  }
+
+  &:active {
+    fill: $html-academy-icon-down;
+  }
+}
+
+.footer__copyright span {
+  display: block;
+  font-size: 14px;
+  line-height: 26px;
+  margin-right: 12px;
+  margin-top: 3px;
 }
