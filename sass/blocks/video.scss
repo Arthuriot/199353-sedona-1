@@ -130,6 +130,30 @@
     fill: $tablet-desktop-header-bg-color;
     z-index: 1;
   }
+
+  &:hover {
+    fill: $sub-text-color;
+
+    // @include tablet {
+    //   fill: $tablet-desktop-header-bg-color;
+    // }
+    //
+    // @include desktop {
+    //   fill: $tablet-desktop-header-bg-color;
+    // }
+  }
+
+  &:active {
+    fill: $video-icons-color-down;
+
+    // @include tablet {
+    //   fill: $tablet-desktop-header-bg-color;
+    // }
+    //
+    // @include desktop {
+    //   fill: $tablet-desktop-header-bg-color;
+    // }
+  }
 }
 
 .video__icon-replay {

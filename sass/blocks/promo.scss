@@ -10,15 +10,16 @@
   @include retina {
     background: url("../img/bg-back-mobile@2x.jpg") no-repeat center;
     background-size: 768px auto;
-    background-position: -225px 0%;
+    background-position: -225px 100%;
   }
 
   @include tablet {
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat center;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat;
 
     @include retina {
-      background: url("../img/bg-back-tablet@2x.jpg") no-repeat center;
+      background: url("../img/bg-back-tablet@2x.jpg") no-repeat;
       background-size: 768px auto;
+      width: 100%;
     }
   }
 
@@ -28,23 +29,29 @@
     @include retina {
       background: url("../img/bg-back-desktop@2x.jpg") no-repeat;
       background-size: 1200px auto;
-      background-position: 50% 0%;
+      background-position: 0 -1px;
       padding-top: 0;
     }
   }
 
   &::after {
-    content: url('data:image/svg+xml;utf8,
+    content: "";
+    background-image: url('data:image/svg+xml;utf8,
     <svg xmlns="http://www.w3.org/2000/svg" id="bg-intro-triangle-mobile" viewBox="440.469 30.889 320 26.111">
       <polygon fill="#FFFFFF" points="760.469,57 760.469,30.889 599.955,57"/>
       <polygon fill="#FFFFFF" points="440.469,57 599.955,57 440.469,31.056"/>
     </svg>'
     );
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    display: block;
     width: 100%;
-    height: 26.111px;
+    height: 29.111px;
 
     @include tablet {
-      content: url('data:image/svg+xml;utf8,
+      content: "";
+      background-image: url('data:image/svg+xml;utf8,
       <svg xmlns="http://www.w3.org/2000/svg" id="bg-intro-triangle-tablet" width="768px" height="57px" viewBox="216.469 0 768 57">
         <g>
           <polygon fill="#FFFFFF" points="249.566,23.71 216.469,20.565 216.469,57 599.955,57 249.566,0"/>
@@ -53,11 +60,13 @@
       </svg>'
       );
       width: 100%;
-      height: 57px;
+      background-size: cover;
+      height: 57.2px;
     }
 
     @include desktop {
-      content: url('data:image/svg+xml;utf8,
+      content: "";
+      background-image: url('data:image/svg+xml;utf8,
       <svg xmlns="http://www.w3.org/2000/svg" id="bg-intro-triangle-desktop" width="1199.91px" height="57px" viewBox="0 0 1199.91 57">
         <g>
           <polygon fill="#FFFFFF" points="250.08,23.71 0.514,0 0.514,57 250.08,57 600.469,57 250.08,0"/>
@@ -65,39 +74,47 @@
         </g>
       </svg>'
       );
+      background-position: -1px 0px;
+      background-size: cover;
       width: 100%;
-      height: 57px;
+      height: 57.1px;
     }
   }
 
   &--photos, &--form {
     display: block;
-    background-position: -225px -231px;
+    background-position: -226px -231px;
     padding-top: 30px;
     min-height: 158px;
 
     @include tablet {
-      background-position: 75% 100%;
+      background-size: cover;
+      background-position: 0 -229px;
       padding-top: 110px;
     }
 
     @include desktop {
-      background-position: 75% 100%;
+      background-position: 0 -218px;
     }
+  }
+
+  &--form {
+    background-position: -225px -231px;
   }
 }
 
 .promo__text {
   display: block;
   margin: 0 auto;
-  width: 280px;
   height: 214px;
   margin-bottom: 56px;
 
   @include tablet {
     width: 100%;
     height: 350px;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
+    position: relative;
+    top: -13px;
   }
 
   @include desktop {
@@ -116,14 +133,15 @@
     @include tablet {
       width: 100%;
       height: 79px;
-      margin-bottom: 60px;
+      margin-bottom: 44px;
+      position: relative;
+      top: -15px;
     }
 
     @include desktop {
-      width: 100%;
-      height: 80px;
-      margin-bottom: 136px;
-      top: 72px;
+      width: 460px;
+      margin-bottom: 133px;
+      top: 71px;
     }
   }
 }

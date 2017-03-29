@@ -5,6 +5,14 @@
   padding-top: 37px;
   padding-bottom: 5px;
 
+  @include tablet {
+    padding: 45px 135px;
+  }
+
+  @include desktop {
+    padding: 45px 350px;
+  }
+
   &--photos {
     padding-top: 38px;
   }
@@ -20,18 +28,10 @@
   &--form {
     padding-bottom: 20px;
   }
-
-  @include tablet {
-    padding: 45px 135px;
-  }
-
-  @include desktop {
-    padding: 45px 350px;
-  }
 }
 
 .intro__title {
-  @include search-title;
+  @include main-title;
   padding-bottom: 27px;
 }
 

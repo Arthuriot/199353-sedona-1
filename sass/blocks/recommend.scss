@@ -41,8 +41,6 @@
 }
 
 .recommend__item svg {
-  display: inline-block;
-  vertical-align: middle;
   fill: $main-bg-color;
 
   @include tablet {
@@ -55,19 +53,19 @@
 }
 
 .recommend__item {
-  display: inline-block;
   margin-bottom: 17px;
 
-  display: flex;
-  flex-direction: column;
-
   @include tablet {
+    display: flex;
+    flex-direction: column;
     width: 256px;
     padding-left: 0;
     padding: 0 45px;
   }
 
   @include desktop {
+    display: flex;
+    flex-direction: column;
     width: 400px;
     padding-left: 0;
     padding: 0 60px;

@@ -63,6 +63,14 @@
 .footer__copyright svg {
   width: 26.943px;
   height: 34.09px;
+
+  &:hover {
+    fill: $main-bg-color;
+  }
+
+  &:active {
+    fill: $html-academy-icon-down;
+  }
 }
 
 .footer__copyright span {
