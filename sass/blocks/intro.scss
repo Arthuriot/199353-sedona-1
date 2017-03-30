@@ -2,15 +2,16 @@
   @include container-style;
   padding: 0 25px;
   text-align: center;
-  padding-top: 37px;
+  padding-top: 40px;
   padding-bottom: 5px;
 
   @include tablet {
-    padding: 45px 135px;
+    padding: 50px 135px;
   }
 
   @include desktop {
-    padding: 45px 350px;
+    padding: 50px 350px;
+    padding-bottom: 51px;
   }
 
   &--photos {
@@ -33,6 +34,10 @@
 .intro__title {
   @include main-title;
   padding-bottom: 27px;
+
+  @include tablet {
+    padding-bottom: 28px;
+  }
 }
 
 .intro__text {

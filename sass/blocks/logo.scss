@@ -1,7 +1,7 @@
 .logo {
   width: 102px;
   height: 83px;
-  margin-left: 109px;
+  margin-left: 110px;
   z-index: 10;
 
   @include tablet {
@@ -17,6 +17,6 @@
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -94px;
+    margin-left: -95px;
   }
 }

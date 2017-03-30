@@ -8,23 +8,23 @@
     display: flex;
     text-align: center;
     padding: 0;
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 55px;
   }
 
   @include desktop {
     display: flex;
     text-align: center;
     padding: 0;
-    padding-top: 150px;
-    padding-bottom: 70px;
+    padding-top: 57px;
+    padding-bottom: 59px;
   }
 }
 
 .recommend__title {
   @include main-title;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .recommend__text {
@@ -42,14 +42,6 @@
 
 .recommend__item svg {
   fill: $main-bg-color;
-
-  @include tablet {
-    align-self: center;
-  }
-
-  @include desktop {
-    align-self: center;
-  }
 }
 
 .recommend__item {
@@ -61,6 +53,7 @@
     width: 256px;
     padding-left: 0;
     padding: 0 45px;
+    margin-bottom: 0;
   }
 
   @include desktop {
@@ -85,7 +78,7 @@
       order: 3;
     }
 
-    @include  desktop {
+    @include desktop {
       order: 3;
     }
   }
@@ -105,34 +98,41 @@
   }
 
   &--house svg {
-    width: 39px;
+    display: inline-block;
+    width: 37px;
     height: 37px;
-    padding-left: 1px;
+    margin-left: 2px;
 
     @include tablet {
-      width: 75px;
-      height: 72px;
+      width: 74.695px;
+      height: 72.346px;
+      margin-left: 45px;
     }
 
     @include desktop {
-      width: 75px;
-      height: 72px;
+      width: 74.695px;
+      height: 72.346px;
+      margin-left: 101px;
+      margin-top: 3px;
     }
   }
 
   &--gift svg {
     width: 39px;
     height: 38px;
-    padding-left: 3px;
+    margin-left: 2px;
 
     @include tablet {
-      width: 64px;
-      height: 75px;
+      width: 63px;
+      height: 75.084px;
+      margin-left: 51px;
+      margin-top: -3px;
     }
 
     @include desktop {
-      width: 64px;
-      height: 75px;
+      width: 63px;
+      height: 75.084px;
+      margin-left: 108px;
     }
   }
 
@@ -142,57 +142,74 @@
     margin-left: -2px;
 
     @include tablet {
-      width: 77px;
-      height: 68px;
+      width: 76.166px;
+      height: 68.959px;
+      margin-left: 45px;
+      margin-top: 3px;
     }
 
     @include desktop {
-      width: 77px;
-      height: 68px;
+      width: 76.166px;
+      height: 68.959px;
+      margin-left: 101px;
+      margin-top: 5px;
     }
   }
 
   &--house h2 {
     margin-left: 6px;
-    margin-top: 7px;
+    margin-top: 9px;
 
     @include tablet {
       margin: 0;
+      margin-top: 27px;
+      margin-bottom: 21px;
     }
 
     @include desktop {
       margin: 0;
+      margin-top: 27px;
+      margin-bottom: 21px;
+      margin-left: -2px;
     }
   }
 
   &--gift h2 {
-    margin-left: 7px;
-    margin-top: 10px;
+    margin-left: 4px;
+    margin-top: 11px;
 
     @include tablet {
       margin: 0;
+      margin-top: 27px;
+      margin-bottom: 21px;
     }
 
     @include desktop {
       margin: 0;
+      margin-top: 27px;
+      margin-bottom: 21px;
     }
   }
 
   &--burger h2 {
-    margin-left: 8px;
-    margin-top: 1px;
+    margin-left: 7px;
+    margin-top: 5px;
 
     @include tablet {
       margin: 0;
+      margin-top: 27px;
+      margin-bottom: 21px;
     }
 
     @include desktop {
       margin: 0;
+      margin-top: 28px;
+      margin-bottom: 21px;
     }
   }
 
   &--house p {
-    margin-top: 12px;
+    margin-top: 9px;
 
     @include tablet {
       margin: 0;
@@ -200,11 +217,12 @@
 
     @include desktop {
       margin: 0;
+      margin-left: -3px;
     }
   }
 
   &--gift p {
-    margin-top: 13px;
+    margin-top: 10px;
     padding-bottom: 6px;
 
     @include tablet {
@@ -217,7 +235,7 @@
   }
 
   &--burger p {
-    margin-top: 10px;
+    margin-top: 7px;
 
     @include tablet {
       margin: 0;
