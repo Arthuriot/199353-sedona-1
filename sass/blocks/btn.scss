@@ -41,14 +41,25 @@
   }
 
   &--form {
+    width: 280px;
+    text-transform: uppercase;
+    font-family: inherit;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 19px;
+
     @include tablet {
       order: 6;
       width: 324px;
+      margin-left: 0;
+      text-align: left;
+      padding-left: 65px;
     }
 
     @include desktop {
       order: 6;
       width: 480px;
+      margin-left: 0px;
     }
   }
 

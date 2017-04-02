@@ -88,8 +88,10 @@
           <h2 class="form__item-title">Контактная информация:</h2>
           <div class="form__container form__container--contacts">
             <div class="form__item-values form__item-values--phone">
-              <label for="phone">Контактный телефон*:</label>
+              <label class="visible-mobile-and-tablet" for="phone">Контактный телефон*:</label>
+              <label class="visible-desktop" for="phone">Телефон*:</label>
               <input type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+              <span class="form__error-text">Ошибка, перепроверьте номер</span>
               <span class="form__icon form__icon--phone">
                 <svg>
                   <use xlink:href="./img/sprite.svg#icon-phone"></use>
@@ -136,7 +138,7 @@
 
         <section class="form__item form__item--emotions">
           <h2 class="form__item-title">Опишите свои эмоции:</h2>
-          <textarea name="review" id="review" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea name="review" id="review" cols="30" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
         </section>
 
         <button class="btn btn--form" type="submit">Отправить отзыв</button>
@@ -145,7 +147,7 @@
       </form>
     </main>
     <footer class="footer">
-      <div class="footer__container">
+      <div class="footer__container footer__container--form">
 
         <div class="footer__hashtag">
           <a href="#">#VISITSEDONA</a>

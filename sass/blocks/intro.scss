@@ -18,26 +18,54 @@
     padding-top: 38px;
   }
 
-  &--photos h1 {
-    padding-bottom: 26px;
-  }
-
-  &--photos p {
-    line-height: 24px;
-  }
-
   &--form {
-    padding-bottom: 20px;
+    border-bottom: 1px solid $input-bg-color-hover;
+    padding: 0 20px;
+    padding-top: 38px;
+    padding-bottom: 17px;
+
+    @include tablet {
+      border: none;
+      padding-top: 67px;
+      margin-bottom: 18px;
+    }
+
+    @include desktop {
+      border: none;
+      padding-top: 105px;
+    }
+  }
+
+  &--photos h1, &--form h1 {
+    @include modal-title;
+    margin-bottom: 26px;
+  }
+
+  &--form h1 {
+    @include tablet {
+      margin-bottom: 24px;
+    }
+
+    @include desktop {
+      margin-bottom: 24px;
+    }
+  }
+
+  &--form p {
+    line-height: 24px;
+
+    @include tablet {
+      padding: 0 145px;
+    }
+
+    @include desktop {
+      padding: 0 360px;
+    }
   }
 }
 
 .intro__title {
   @include main-title;
-  padding-bottom: 27px;
-
-  @include tablet {
-    padding-bottom: 28px;
-  }
 }
 
 .intro__text {
