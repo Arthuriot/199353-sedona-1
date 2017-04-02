@@ -32,11 +32,7 @@
 
 .map::after {
   content: "";
-  background-image: url('data:image/svg+xml;utf8,
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px" height="27px" viewBox="0 0 27 27">
-    <circle fill="#FFFFFF" cx="13.5" cy="13.5" r="13.5"/>
-    <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"/>
-  </svg>');
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='27px' height='27px' viewBox='0 0 27 27'%3E%3Ccircle fill='%23FFFFFF' cx='13.5' cy='13.5' r='13.5'/%3E%3Ccircle fill='%2381B3D3' cx='13.5' cy='13.5' r='8.361'/%3E%3C/svg%3E");
   width: 27px;
   height: 27px;
   position: absolute;

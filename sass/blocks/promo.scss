@@ -79,11 +79,15 @@
 
   &::after {
     content: "";
-    background-image: url('data:image/svg+xml;utf8,
-    <svg xmlns="http://www.w3.org/2000/svg" id="bg-intro-triangle-mobile" viewBox="440.469 30.889 320 26.111">
-      <polygon fill="#FFFFFF" points="760.469,57 760.469,30.889 599.955,57"/>
-      <polygon fill="#FFFFFF" points="440.469,57 599.955,57 440.469,31.056"/>
-    </svg>'
+    background-image: url('data:image/svg+xml;base64,
+    PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIw
+cHgiIHk9IjBweCIgd2lkdGg9IjMyMHB4IiBoZWlnaHQ9IjI2LjExMXB4IiB2aWV3Qm94PSI0NDAu
+NDY5IDMwLjg4OSAzMjAgMjYuMTExIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDQ0MC40NjkgMzAu
+ODg5IDMyMCAyNi4xMTEiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KICA8cG9seWdvbiBmaWxsPSIj
+RkZGRkZGIiBwb2ludHM9Ijc2MC40NjksNTcgNzYwLjQ2OSwzMC44ODkgNTk5Ljk1NSw1NyIvPg0K
+ICA8cG9seWdvbiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjQ0MC40NjksNTcgNTk5Ljk1NSw1NyA0
+NDAuNDY5LDMxLjA1NiIvPg0KPC9zdmc+DQo='
     );
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -94,13 +98,14 @@
 
     @include tablet {
       content: "";
-      background-image: url('data:image/svg+xml;utf8,
-      <svg xmlns="http://www.w3.org/2000/svg" id="bg-intro-triangle-tablet" width="768px" height="57px" viewBox="216.469 0 768 57">
-        <g>
-          <polygon fill="#FFFFFF" points="249.566,23.71 216.469,20.565 216.469,57 599.955,57 249.566,0"/>
-          <polygon fill="#FFFFFF" points="950.346,23.71 950.346,0 599.955,57 984.469,57 984.469,20.468"/>
-        </g>
-      </svg>'
+      background-image: url('data:image/svg+xml;base64,
+      PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJiZy1pbnRyby10cmlh
+bmdsZS10YWJsZXQiIHdpZHRoPSI3NjhweCIgaGVpZ2h0PSI1N3B4IiB2aWV3Qm94PSIyMTYuNDY5
+IDAgNzY4IDU3Ij4NCiAgICAgICAgPGc+DQogICAgICAgICAgPHBvbHlnb24gZmlsbD0iI0ZGRkZG
+RiIgcG9pbnRzPSIyNDkuNTY2LDIzLjcxIDIxNi40NjksMjAuNTY1IDIxNi40NjksNTcgNTk5Ljk1
+NSw1NyAyNDkuNTY2LDAiLz4NCiAgICAgICAgICA8cG9seWdvbiBmaWxsPSIjRkZGRkZGIiBwb2lu
+dHM9Ijk1MC4zNDYsMjMuNzEgOTUwLjM0NiwwIDU5OS45NTUsNTcgOTg0LjQ2OSw1NyA5ODQuNDY5
+LDIwLjQ2OCIvPg0KICAgICAgICA8L2c+DQogICAgICA8L3N2Zz4='
       );
       background-size: cover;
       height: 57px;
@@ -108,13 +113,16 @@
 
     @include desktop {
       content: "";
-      background-image: url('data:image/svg+xml;utf8,
-      <svg xmlns="http://www.w3.org/2000/svg" id="bg-intro-triangle-desktop" width="1199.91px" height="57px" viewBox="0 0 1199.91 57">
-        <g>
-          <polygon fill="#FFFFFF" points="250.08,23.71 0.514,0 0.514,57 250.08,57 600.469,57 250.08,0"/>
-          <polygon fill="#FFFFFF" points="950.859,23.71 950.859,0 600.469,57 950.859,57 1200.424,57 1200.424,0"/>
-        </g>
-      </svg>'
+      background-image: url('data:image/svg+xml;base64,
+      PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
+MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIw
+cHgiIHk9IjBweCIgd2lkdGg9IjExOTkuOTFweCIgaGVpZ2h0PSI1N3B4IiB2aWV3Qm94PSIwIDAg
+MTE5OS45MSA1NyIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTE5OS45MSA1NyIgeG1sOnNw
+YWNlPSJwcmVzZXJ2ZSI+DQogIDxnPg0KICAgIDxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50
+cz0iMjUwLjA4LDIzLjcxIDAuNTE0LDAgMC41MTQsNTcgMjUwLjA4LDU3IDYwMC40NjksNTcgMjUw
+LjA4LDAiLz4NCiAgICA8cG9seWdvbiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9Ijk1MC44NTksMjMu
+NzEgOTUwLjg1OSwwIDYwMC40NjksNTcgOTUwLjg1OSw1NyAxMjAwLjQyNCw1NyAxMjAwLjQyNCww
+Ii8+DQogIDwvZz4NCjwvc3ZnPg0K'
       );
       background-position: -1px 0px;
       background-size: cover;

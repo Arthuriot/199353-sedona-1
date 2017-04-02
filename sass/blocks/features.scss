@@ -83,7 +83,6 @@
 
 .features__container {
   text-align: center;
-  @include container-style;
 
   @include tablet {
     display: flex;
