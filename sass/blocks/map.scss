@@ -2,6 +2,7 @@
   background: url("../img/bg-map-mobile@1x.jpg") no-repeat;
   background-size: 100%;
   min-height: 350px;
+  position: relative;
 
   @include retina {
     background: url("../img/bg-map-mobile@2x.jpg") no-repeat;
@@ -27,5 +28,28 @@
       background-size: 100%;
     }
   }
+}
 
+.map::after {
+  content: "";
+  background-image: url('data:image/svg+xml;utf8,
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px" height="27px" viewBox="0 0 27 27">
+    <circle fill="#FFFFFF" cx="13.5" cy="13.5" r="13.5"/>
+    <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"/>
+  </svg>');
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  top: 161px;
+  left: 146px;
+
+  @include tablet {
+    top: 164px;
+    left: 370px;
+  }
+
+  @include desktop {
+    top: 162px;
+    left: 586px;
+  }
 }

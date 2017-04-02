@@ -40,7 +40,8 @@
     }
   }
 
-  &--photos, &--form {
+  &--photos {
+    background-size: 768px 389px;
     background-position: -226px -231px;
     padding-top: 30px;
     min-height: 158px;
@@ -61,10 +62,13 @@
   &--form {
     background-size: 768px 389px;
     background-position: -225px -231px;
+    padding-top: 30px;
+    min-height: 158px;
 
     @include tablet {
       background-size: cover;
       background-position: 0 -229px;
+      padding-top: 110px;
     }
 
     @include desktop {

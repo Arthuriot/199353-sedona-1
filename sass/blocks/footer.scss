@@ -74,8 +74,14 @@
     width: 400px;
     justify-content: flex-end;
     padding: 0;
-    padding-right: 120px;
+    padding-right: 44px;
     margin-top: 2px;
+  }
+
+  &--form {
+    @include desktop {
+      padding-right: 120px;
+    }
   }
 }
 

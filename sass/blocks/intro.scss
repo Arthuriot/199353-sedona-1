@@ -11,11 +11,21 @@
 
   @include desktop {
     padding: 50px 350px;
-    padding-bottom: 51px;
+    padding-bottom: 50px;
   }
 
   &--photos {
     padding-top: 38px;
+
+    @include tablet {
+      padding: 67px 20px;
+      padding-bottom: 69px;
+    }
+
+    @include desktop {
+      padding-top: 104px;
+      padding-bottom: 49px;
+    }
   }
 
   &--form {
@@ -39,9 +49,7 @@
   &--photos h1, &--form h1 {
     @include modal-title;
     margin-bottom: 26px;
-  }
 
-  &--form h1 {
     @include tablet {
       margin-bottom: 24px;
     }
@@ -62,10 +70,31 @@
       padding: 0 360px;
     }
   }
+
+  &--photos p {
+    line-height: 24px;
+
+    @include tablet {
+      padding: 0 145px;
+    }
+
+    @include desktop {
+      padding: 0 30px;
+    }
+  }
 }
 
 .intro__title {
   @include main-title;
+  margin-bottom: 27px;
+
+  @include tablet {
+    margin-bottom: 28px;
+  }
+
+  @include desktop {
+    margin-bottom: 28px;
+  }
 }
 
 .intro__text {

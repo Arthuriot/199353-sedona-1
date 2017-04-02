@@ -2,34 +2,61 @@
   text-align: center;
   padding-top: 33px;
   border-top: 1px solid $input-bg-color-hover;
-  margin-bottom: 42px;
+  margin-bottom: 39px;
 
   @include tablet {
-    padding-top: 65px;
-    border: none;
     padding: 0 60px;
+    padding-top: 66px;
+    border: none;
+    margin-bottom: 54px;
   }
 
   @include desktop {
     border: none;
+    padding-top: 70px;
+    margin-bottom: 99px;
   }
 }
 
 .video__title {
-  @include search-title;
+  @include modal-title;
   margin-bottom: 26px;
+
+  @include tablet {
+    line-height: 26px;
+    margin-bottom: 31px;
+  }
+
+  @include desktop {
+    line-height: 26px;
+    margin-bottom: 31px;
+  }
 }
 
 .video__text {
   @include sub-text;
   padding: 0 40px;
   line-height: 24px;
+
+  @include tablet {
+    padding: 0 110px;
+  }
+
+  @include desktop {
+    padding-left: 390px;
+    padding-right: 390px;
+  }
 }
 
 .video__description {
   margin-bottom: 35px;
+
+  @include tablet {
+    margin-bottom: 73px;
+  }
+
   @include desktop {
-    padding: 65px 345px;
+    margin-bottom: 71px;
   }
 }
 
@@ -38,61 +65,62 @@
   flex-direction: column;
   position: relative;
   z-index: -1;
+
   @include desktop {
     width: 800px;
-    margin: 0 auto;
+    margin-left: 199px;
     z-index: 1;
   }
+}
 
-  &::before {
-    content: "";
-    width: 9px;
-    height: 9px;
-    background-color: $tablet-desktop-header-bg-color;
-    z-index: 10;
-    border-radius: 50%;
-    bottom: 17px;
-    left: 78px;
-    position: absolute;
+.video__player::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: $tablet-desktop-header-bg-color;
+  z-index: 10;
+  border-radius: 50%;
+  bottom: 17px;
+  left: 78px;
+  position: absolute;
 
-    @include tablet {
-      bottom: 42px;
-      left: 207px;
-    }
-
-    @include desktop {
-      bottom: 42px;
-      left: 207px;
-    }
+  @include tablet {
+    bottom: 42px;
+    left: 206px;
   }
 
-  &::after {
-    content: "";
-    background-color: #434040;
-    opacity: 0.6;
-    margin: 0 20px;
-    margin-top: -45px;
-    padding-top: 1px;
-    padding-bottom: 2px;
-    border: 22px solid $main-text-color;
-    border-bottom: 20px solid $main-text-color;
-    border-right: 23px solid $main-text-color;
+  @include desktop {
+    bottom: 42px;
+    left: 206px;
+  }
+}
 
-    @include tablet {
-      margin: 0;
-      margin-top: -93px;
-      border: 45px solid $main-text-color;
-      border-left: 93px solid $main-text-color;
-      border-right: 166px solid $main-text-color;
-    }
+.video__player::after {
+  content: "";
+  background-color: #434040;
+  opacity: 0.6;
+  margin: 0 20px;
+  margin-top: -45px;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  border: 22px solid $main-text-color;
+  border-bottom: 20px solid $main-text-color;
+  border-right: 23px solid $main-text-color;
 
-    @include desktop {
-      margin: 0;
-      margin-top: -93px;
-      border: 45px solid $main-text-color;
-      border-left: 93px solid $main-text-color;
-      border-right: 166px solid $main-text-color;
-    }
+  @include tablet {
+    margin: 0;
+    margin-top: -92px;
+    border: 45px solid $main-text-color;
+    border-left: 93px solid $main-text-color;
+    border-right: 166px solid $main-text-color;
+  }
+
+  @include desktop {
+    margin: 0;
+    margin-top: -93px;
+    border: 45px solid $main-text-color;
+    border-left: 93px solid $main-text-color;
+    border-right: 166px solid $main-text-color;
   }
 }
 
@@ -133,26 +161,10 @@
 
   &:hover {
     fill: $sub-text-color;
-
-    // @include tablet {
-    //   fill: $tablet-desktop-header-bg-color;
-    // }
-    //
-    // @include desktop {
-    //   fill: $tablet-desktop-header-bg-color;
-    // }
   }
 
   &:active {
     fill: $video-icons-color-down;
-
-    // @include tablet {
-    //   fill: $tablet-desktop-header-bg-color;
-    // }
-    //
-    // @include desktop {
-    //   fill: $tablet-desktop-header-bg-color;
-    // }
   }
 }
 
@@ -161,6 +173,14 @@
   height: 20px;
   margin-right: auto;
   margin-left: 25px;
+
+  @include tablet {
+    margin-left: 15px;
+  }
+
+  @include desktop {
+    margin-left: 24px;
+  }
 }
 
 .video__icon-subtitles {
@@ -175,4 +195,8 @@
   margin-top: 1px;
   margin-left: 31px;
   margin-right: 23px;
+
+  @include tablet {
+    margin-right: 21px;
+  }
 }
