@@ -1,12 +1,15 @@
 .map {
-  background: url("../img/bg-map-mobile@1x.jpg") no-repeat;
   background-size: 100%;
   min-height: 350px;
   position: relative;
+  width: 100%;
 
-  @include retina {
-    background: url("../img/bg-map-mobile@2x.jpg") no-repeat;
-    background-size: 100% 350px;
+  @include mobile {
+    background: url("../img/bg-map-mobile@1x.jpg") no-repeat;
+    @include retina {
+      background: url("../img/bg-map-mobile@2x.jpg") no-repeat;
+      background-size: 100% 350px;
+    }
   }
 
   @include tablet {
@@ -28,6 +31,10 @@
       background-size: 100%;
     }
   }
+}
+
+.map iframe {
+  width: 100%;
 }
 
 .map::after {
