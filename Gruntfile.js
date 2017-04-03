@@ -77,7 +77,7 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ["img/**/*.{png,jpg,gif}"]
+          src: ["build/img/**/*.{png,jpg,gif}"]
         }]
       }
     },
@@ -90,7 +90,7 @@ module.exports = function(grunt) {
       },
       symbols: {
         files: {
-          "img/symbols.svg": ["img/*.svg"]
+          "build/img/symbols.svg": ["img/*.svg"]
         }
       }
     },
@@ -99,7 +99,7 @@ module.exports = function(grunt) {
       symbols: {
         files: [{
           expand: true,
-          src: ["img/*.svg"]
+          src: ["build/img/*.svg"]
         }]
       }
     },
