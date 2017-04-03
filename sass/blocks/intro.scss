@@ -1,7 +1,6 @@
 .intro__container {
-  @include container-style;
-  padding: 0 25px;
   text-align: center;
+  padding: 0 20px;
   padding-top: 40px;
   padding-bottom: 5px;
 
@@ -18,11 +17,12 @@
     padding-top: 38px;
 
     @include tablet {
-      padding: 67px 20px;
+      padding: 67px 165px;
       padding-bottom: 69px;
     }
 
     @include desktop {
+      padding: 0 385px;
       padding-top: 104px;
       padding-bottom: 49px;
     }
@@ -36,13 +36,17 @@
 
     @include tablet {
       border: none;
+      padding: 0 165px;
       padding-top: 67px;
+      padding-bottom: 17px;
       margin-bottom: 18px;
     }
 
     @include desktop {
       border: none;
-      padding-top: 105px;
+      padding: 0 380px;
+      padding-top: 104px;
+      padding-bottom: 18px;
     }
   }
 
@@ -61,22 +65,10 @@
 
   &--form p {
     line-height: 24px;
-
-    @include tablet {
-      padding: 0 145px;
-    }
   }
 
   &--photos p {
     line-height: 24px;
-
-    @include tablet {
-      padding: 0 145px;
-    }
-
-    @include desktop {
-      padding: 0 30px;
-    }
   }
 }
 
