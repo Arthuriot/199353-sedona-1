@@ -4,20 +4,45 @@
 
 .footer__container {
   @include container-style;
-
+  margin-top: -3px;
   @include tablet {
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    padding: 38px 60px;
+    padding: 0 60px;
+    margin-top: -3px;
   }
 
   @include desktop {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-top: 38px;
-    padding-bottom: 38px;
+    padding: 0;
+  }
+
+  &--photos {
+    padding-top: 3px;
+    @include tablet {
+      margin-top: 0px;
+    }
+
+    @include desktop {
+      padding-top: 3px;
+    }
+  }
+
+  &--form {
+    margin-left: -1px;
+    padding-top: 3px;
+
+    @include tablet {
+      margin-left: 0px;
+      margin-top: 0px;
+    }
+
+    @include desktop {
+      margin-left: 0px;
+      padding-top: 3px;
+    }
   }
 }
 
@@ -27,7 +52,7 @@
 
 .footer__hashtag {
   @include btn-text;
-  padding-top: 33px;
+  padding-top: 36px;
   padding-bottom: 36px;
   padding-left: 71px;
   font-weight: bold;
@@ -35,11 +60,14 @@
   @include tablet {
     width: 256px;
     padding: 0;
+    padding-top: 46px;
   }
 
   @include desktop {
     width: 400px;
     padding: 0;
+    margin-top: -4px;
+    text-align: center;
   }
 }
 
@@ -50,13 +78,24 @@
   justify-content: center;
 
   @include tablet {
+    display: flex;
+    justify-content: flex-end;
     width: 256px;
     padding: 0;
+    padding-top: 43px;
   }
 
   @include desktop {
     width: 400px;
+    justify-content: flex-end;
     padding: 0;
+    padding-right: 44px;
+  }
+
+  &--form {
+    @include desktop {
+      padding-right: 120px;
+    }
   }
 }
 

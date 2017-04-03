@@ -28,27 +28,27 @@
     }
   }
 
-  &--search:hover {
-    background-color: $btn-bg-color-hover;
-  }
-
-  &--search:active {
-    background-color: $btn-bg-color-down;
-  }
-
-  &--search:disabled {
-    background-color: $btn-bg-color-disabled;
-  }
-
   &--form {
+    text-transform: uppercase;
+    font-family: inherit;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 19px;
+    width: 87.5%;
+    margin: 0 auto;
+
     @include tablet {
       order: 6;
       width: 324px;
+      margin-left: 0;
+      text-align: left;
+      padding-left: 65px;
     }
 
     @include desktop {
       order: 6;
       width: 480px;
+      margin-left: 0px;
     }
   }
 
@@ -64,6 +64,18 @@
       width: 272px;
     }
   }
+}
+
+.btn:hover {
+  background-color: $btn-bg-color-hover;
+}
+
+.btn:active {
+  background-color: $btn-bg-color-down;
+}
+
+.btn:disabled {
+  background-color: $btn-bg-color-disabled;
 }
 
 .btn__container {

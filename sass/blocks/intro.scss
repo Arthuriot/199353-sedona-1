@@ -1,38 +1,88 @@
 .intro__container {
-  @include container-style;
-  padding: 0 25px;
   text-align: center;
-  padding-top: 37px;
+  padding: 0 20px;
+  padding-top: 40px;
   padding-bottom: 5px;
 
   @include tablet {
-    padding: 45px 135px;
+    padding: 50px 135px;
   }
 
   @include desktop {
-    padding: 45px 350px;
+    padding: 50px 350px;
+    padding-bottom: 50px;
   }
 
   &--photos {
     padding-top: 38px;
+
+    @include tablet {
+      padding: 67px 165px;
+      padding-bottom: 69px;
+    }
+
+    @include desktop {
+      padding: 0 385px;
+      padding-top: 104px;
+      padding-bottom: 49px;
+    }
   }
 
-  &--photos h1 {
-    padding-bottom: 26px;
+  &--form {
+    border-bottom: 1px solid $input-bg-color-hover;
+    padding: 0 20px;
+    padding-top: 38px;
+    padding-bottom: 17px;
+
+    @include tablet {
+      border: none;
+      padding: 0 165px;
+      padding-top: 67px;
+      padding-bottom: 17px;
+      margin-bottom: 18px;
+    }
+
+    @include desktop {
+      border: none;
+      padding: 0 380px;
+      padding-top: 104px;
+      padding-bottom: 18px;
+    }
+  }
+
+  &--photos h1, &--form h1 {
+    @include modal-title;
+    margin-bottom: 26px;
+
+    @include tablet {
+      margin-bottom: 24px;
+    }
+
+    @include desktop {
+      margin-bottom: 24px;
+    }
+  }
+
+  &--form p {
+    line-height: 24px;
   }
 
   &--photos p {
     line-height: 24px;
   }
-
-  &--form {
-    padding-bottom: 20px;
-  }
 }
 
 .intro__title {
   @include main-title;
-  padding-bottom: 27px;
+  margin-bottom: 27px;
+
+  @include tablet {
+    margin-bottom: 28px;
+  }
+
+  @include desktop {
+    margin-bottom: 28px;
+  }
 }
 
 .intro__text {
