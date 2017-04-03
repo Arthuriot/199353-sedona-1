@@ -211,14 +211,16 @@
   }
 
   &--town {
-    background: url("../img/photo-city-mobile@1x.jpg") no-repeat center;
-    background-color: $features-image-town-bg-color;
-    background-size: 100% 260px;
-
-    @include retina {
-      background: url("../img/photo-city-mobile@2x.jpg") no-repeat center;
+    @include mobile {
+      background: url("../img/photo-city-mobile@1x.jpg") no-repeat center;
       background-color: $features-image-town-bg-color;
-      background-size: cover;
+      background-size: 100% 260px;
+
+      @include retina {
+        background: url("../img/photo-city-mobile@2x.jpg") no-repeat center;
+        background-color: $features-image-town-bg-color;
+        background-size: cover;
+      }
     }
 
     @include tablet {
@@ -246,14 +248,16 @@
   }
 
   &--bridge {
-    background: url("../img/photo-bridge@1x.jpg") no-repeat 0 0;
-    background-color: $features-image-bridge-bg-color;
-    background-size: 100% 260px;
-
-    @include retina {
-      background: url("../img/photo-bridge-mobile@2x.jpg") no-repeat center;
+    @include mobile {
+      background: url("../img/photo-bridge@1x.jpg") no-repeat 0 0;
       background-color: $features-image-bridge-bg-color;
       background-size: 100% 260px;
+
+      @include retina {
+        background: url("../img/photo-bridge-mobile@2x.jpg") no-repeat center;
+        background-color: $features-image-bridge-bg-color;
+        background-size: 100% 260px;
+      }
     }
 
     @include tablet {

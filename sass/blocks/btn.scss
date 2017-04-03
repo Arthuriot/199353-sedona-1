@@ -28,18 +28,6 @@
     }
   }
 
-  &--search:hover {
-    background-color: $btn-bg-color-hover;
-  }
-
-  &--search:active {
-    background-color: $btn-bg-color-down;
-  }
-
-  &--search:disabled {
-    background-color: $btn-bg-color-disabled;
-  }
-
   &--form {
     text-transform: uppercase;
     font-family: inherit;
@@ -76,6 +64,18 @@
       width: 272px;
     }
   }
+}
+
+.btn:hover {
+  background-color: $btn-bg-color-hover;
+}
+
+.btn:active {
+  background-color: $btn-bg-color-down;
+}
+
+.btn:disabled {
+  background-color: $btn-bg-color-disabled;
 }
 
 .btn__container {

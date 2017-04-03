@@ -65,10 +65,6 @@
     @include tablet {
       padding: 0 145px;
     }
-
-    @include desktop {
-      padding: 0 360px;
-    }
   }
 
   &--photos p {
