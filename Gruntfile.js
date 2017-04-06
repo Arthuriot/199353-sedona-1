@@ -23,7 +23,7 @@ module.exports = function (grunt) {
     browserSync: {
       server: {
         bsFiles: {
-          src: ["build/*.html", "build/css/*.css"]
+          src: ["build/*.html", "build/css/*.css", "build/js/*.js"]
         },
         options: {
           server: "build/",
@@ -89,6 +89,9 @@ module.exports = function (grunt) {
       style: {
         files: ["sass/**/*.{scss,sass}"],
         tasks: ["sass", "postcss", "csso"]
+      },
+      js: {
+        files: ["src/js/*.js"]
       }
     },
     copy: {

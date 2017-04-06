@@ -1,5 +1,4 @@
 .menu {
-  display: block;
   background-color: $main-bg-color;
   text-align: center;
 
@@ -24,9 +23,9 @@
   }
 }
 
-.menu__close {
+.menu__close-button {
   display: block;
-  background-color: inherit;
+  background-color: $main-bg-color;
   position: absolute;
   top: 17px;
   right: 19px;
@@ -42,7 +41,7 @@
   }
 }
 
-.menu__close svg {
+.menu__close-button svg {
   fill: $secondary-text-color;
   width: 22.199px;
   height: 22.199px;
@@ -196,4 +195,12 @@
       color: $menu-item-active-text-color-hover;
     }
   }
+}
+
+.menu-closed {
+  display: none;
+}
+
+.menu-open {
+  display: block;
 }
