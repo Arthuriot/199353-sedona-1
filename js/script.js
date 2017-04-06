@@ -7,7 +7,6 @@
   var modalAlertOverlay = document.querySelector('#modal-alert');
   var alertCloseButton = document.querySelector('.btn--alert');
   var successCloseButton = document.querySelector('.btn--success');
-  // var openButton = document.querySelector('btn--form');
   var ESCAPE_KEY_CODE = 27;
   var ENTER_KEY_CODE = 13;
 
