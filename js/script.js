@@ -7,19 +7,19 @@ var menuOpenButton = document.querySelector('.header__menu-icon');
 menuOpenButton.addEventListener('click', function (event) {
   event.preventDefault();
 
-  menu.classList.remove('menu-closed');
-  menu.classList.add('menu-open');
+  menu.classList.remove('menu__closed');
+  menu.classList.add('menu__open');
 
-  menuOpenButton.classList.remove('.header__menu-closed');
-  menuOpenButton.classList.add('.header__menu-open');
+  menuOpenButton.classList.remove('icon__shown');
+  menuOpenButton.classList.add('icon__hidden');
 });
 
 menuCloseButton.addEventListener('click', function (event) {
   event.preventDefault();
 
-  menu.classList.remove('menu-open');
-  menu.classList.add('menu-closed');
+  menu.classList.remove('menu__open');
+  menu.classList.add('menu__closed');
 
-  menuOpenButton.classList.remove('.header__menu-open');
-  menuOpenButton.classList.add('.header__menu-closed');
+  menuOpenButton.classList.remove('icon__hidden');
+  menuOpenButton.classList.add('icon__shown');
 });

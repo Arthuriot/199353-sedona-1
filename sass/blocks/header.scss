@@ -22,22 +22,6 @@
   margin-right: 20px;
   align-self: flex-start;
   margin-top: 17px;
-}
-
-.header__menu-icon svg {
-  fill: $main-bg-color;
-  width: 23px;
-  height: 21px;
-}
-
-// For JavaScript
-
-.header__menu-open {
-  display: none;
-}
-
-.header__menu-closed {
-  display: block;
 
   @include tablet {
     display: none;
@@ -46,4 +30,10 @@
   @include desktop {
     display: none;
   }
+}
+
+.header__menu-icon svg {
+  fill: $main-bg-color;
+  width: 23px;
+  height: 21px;
 }
