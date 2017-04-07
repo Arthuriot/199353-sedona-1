@@ -204,6 +204,14 @@
 
 .menu__closed {
   display: none;
+
+  @include tablet {
+    display: block;
+  }
+
+  @include desktop {
+    display: block;
+  }
 }
 
 .icon__hidden {
