@@ -46,9 +46,4 @@
 
   document.addEventListener('keydown', closeModalSuccessOnKey);
   document.addEventListener('keydown', closeModalAlertOnKey);
-
-  // openButton.addEventListener('click', function() {
-  //   modal.classList.toggle('modal-closed');
-  //   modalOverlay.classList.toggle('modal-closed');
-  // });
 })();
