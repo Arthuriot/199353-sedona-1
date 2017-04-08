@@ -77,12 +77,3 @@
 .btn:disabled {
   background-color: $btn-bg-color-disabled;
 }
-
-.btn__container {
-  padding: 20px;
-  background-color: $input-bg-color;
-
-  @include tablet {
-    padding: 44px 91px;
-  }
-}

@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона - Фотографии</title>
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -13,8 +18,8 @@
   <div class="box-wrapper">
 
     <nav class="menu menu--closed">
-      <button class="menu__close" type="button">
-        <svg viewBox="0 0 22.199 22.199">
+      <button class="menu__close-button" type="button">
+        <svg viewBox="0 0 22.199 22.199" width="22.199" height="22.199">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cross"></use>
         </svg>
       </button>
@@ -44,7 +49,7 @@
         </div>
 
         <button class="header__menu-icon" type="button">
-          <svg viewBox="0 0 22.928 21.982">
+          <svg viewBox="0 0 22.928 21.982" width="22.928" height="21.982">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu"></use>
           </svg>
         </button>
@@ -53,7 +58,7 @@
     </header>
     <main>
       <div class="promo promo--photos">
-        <svg class="promo__text promo__text--photos" viewBox="0 0 459.754 79.805">
+        <svg class="promo__text promo__text--photos" viewBox="0 0 459.754 79.805" width="459.754" height="79.805">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#text-sedona"></use>
         </svg>
       </div>
@@ -197,13 +202,13 @@
           </picture>
         </div>
         <div class="video__controls">
-          <svg class="video__icon-replay" viewBox="0 0 16 20">
+          <svg class="video__icon-replay" viewBox="0 0 16 20" width="16" height="20">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video-replay"></use>
           </svg>
-          <svg class="video__icon-subtitles" viewBox="0 0 32 20">
+          <svg class="video__icon-subtitles" viewBox="0 0 32 20" width="32" height="20">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video-subtitles"></use>
           </svg>
-          <svg class="video__icon-fullscreen" viewBox="0 0 20 20">
+          <svg class="video__icon-fullscreen" viewBox="0 0 20 20" width="20" height="20">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video-fullscreen"></use>
           </svg>
         </div>
@@ -218,17 +223,17 @@
 
         <div class="social">
           <a href="#" class="social__link social__link--twitter">
-            <svg viewBox="0 0 17.5 14.663">
+            <svg viewBox="0 0 17.5 14.663" width="17.5" height="14.663">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
             </svg>
           </a>
           <a href="#" class="social__link social__link--facebook">
-            <svg viewBox="0 0 8.672 18.944">
+            <svg viewBox="0 0 8.672 18.944" width="8.672" height="18.944">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
             </svg>
           </a>
           <a href="#" class="social__link social__link--youtube">
-            <svg viewBox="0 0 19.979 14.015">
+            <svg viewBox="0 0 19.979 14.015" width="19.979" heigh="14.015">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use>
             </svg>
           </a>
@@ -237,7 +242,7 @@
         <div class="footer__copyright">
           <span>Разработано</span>
           <a href="#">
-            <svg viewBox="0 0 26.943 34.09">
+            <svg viewBox="0 0 26.943 34.09" width="26.943" height="34.09">
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>
@@ -247,8 +252,8 @@
     </footer>
 
   </div>
-  <script src="js/picturefill.min.js" async></script>
   <script src="js/script.js"></script>
+  <script src="js/modal-close.js"></script>
 </body>
 
 </html>

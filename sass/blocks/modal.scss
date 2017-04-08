@@ -78,3 +78,12 @@
 .modal-closed {
   display: none;
 }
+
+.modal__btn-container {
+  padding: 20px;
+  background-color: $input-bg-color;
+
+  @include tablet {
+    padding: 44px 91px;
+  }
+}
