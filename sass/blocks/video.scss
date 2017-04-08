@@ -1,5 +1,4 @@
 .video {
-  text-align: center;
   padding-top: 33px;
   border-top: 1px solid $input-bg-color-hover;
   margin-bottom: 39px;
@@ -49,6 +48,7 @@
 }
 
 .video__description {
+  text-align: center;
   margin-bottom: 35px;
 
   @include tablet {
@@ -98,6 +98,7 @@
 .video__player::after {
   content: "";
   background-color: #434040;
+  display: block;
   opacity: 0.6;
   margin: 0 20px;
   margin-top: -45px;
