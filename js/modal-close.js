@@ -1,6 +1,5 @@
 'use strict';
 (function () {
-  // var modal = document.querySelector('.modal');
   var modalSuccess = document.querySelector('.modal--success');
   var modalAlert = document.querySelector('.modal--alert');
   var modalSuccessOverlay = document.querySelector('#modal-success');
