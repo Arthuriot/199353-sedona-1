@@ -21,6 +21,7 @@
     "grunt-sass": "2.0.0",
     "grunt-svgmin": "^4.0.0",
     "grunt-svgstore": "^1.0.0",
+    "jshint": "^2.9.5",
     "load-grunt-tasks": "^3.5.2"
   },
   "scripts": {
